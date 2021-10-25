@@ -15,6 +15,7 @@ export default function NavbarComponent() {
          </NavbarItem>
          <NavbarItem link="#projects">Projects</NavbarItem>
          <NavbarItem link="#about">About</NavbarItem>
+         <NavbarItem link="#skills">Skills</NavbarItem>
          <NavbarItem link="#resume">Resume</NavbarItem>
       </Navbar>
    );
