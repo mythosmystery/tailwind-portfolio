@@ -9,7 +9,9 @@ export function CardBody({ children }) {
 }
 export function CardLight({ children, show }) {
    return (
-    <div className={`flex flex-col bg-gray-700 md:w-2/4 mx-6 px-4 pt-1 pb-4 my-4 md:mx-auto rounded-md shadow-lg ${show ? '' : 'hidden'}`}>{children}</div>
+      <div className={`flex flex-col bg-gray-700 sm:w-2/4 mx-6 px-4 sm:px-9 pt-1 pb-4 my-4 sm:mx-auto rounded-md shadow-lg ${show ? '' : 'hidden'}`}>
+         {children}
+      </div>
    );
 }
 export function CardFooter({ children }) {

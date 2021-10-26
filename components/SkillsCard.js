@@ -1,8 +1,8 @@
 import List from './List';
-import { ListTitle } from './List';
+import { ListTitle, ListItem } from './List';
 export default function SkillsCard() {
    return (
-      <div className="bg-gray-800 text-green-400 mx-6 md:w-1/4 md:mx-auto p-4 rounded-lg shadow-lg" id="skills">
+      <div className="bg-gray-800 text-green-400 mx-6 sm:w-2/4 lg:w-1/4 sm:mx-auto p-4 rounded-lg shadow-lg" id="skills">
          <ListTitle>Languages</ListTitle>
          <List>
             <li>Javascript</li>
