@@ -1,5 +1,5 @@
 export default function Card({ children }) {
-   return <div className="flex text-gray-300 bg-gray-800 p-3 shadow-md mx-6 my-6 rounded-md">{children}</div>;
+   return <div className="flex text-gray-300 bg-gray-800 p-3 shadow-md mx-6 my-4 rounded-md">{children}</div>;
 }
 export function CardTitle({ children }) {
    return <h2 className="text-green-400 text-2xl my-2">{children}</h2>;
@@ -9,7 +9,7 @@ export function CardBody({ children }) {
 }
 export function CardLight({ children, show }) {
    return (
-      <div className={`flex flex-col bg-gray-700 w-2/4 px-4 pt-1 pb-4 my-4 mx-auto rounded-md shadow-lg ${show ? '' : 'hidden'}`}>{children}</div>
+    <div className={`flex flex-col bg-gray-700 md:w-2/4 mx-6 px-4 pt-1 pb-4 my-4 md:mx-auto rounded-md shadow-lg ${show ? '' : 'hidden'}`}>{children}</div>
    );
 }
 export function CardFooter({ children }) {

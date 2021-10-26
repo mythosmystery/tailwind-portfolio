@@ -21,7 +21,7 @@ export default function Home() {
          <body className="bg-gray-900 min-w-screen min-h-screen">
             <NavbarComponent />
 
-            <div className="flex flex-row bg-gray-600 p-2 mb-6 mt-10 mx-12 rounded-lg drop-shadow-lg" id="about">
+          <div className="flex flex-col md:flex-row bg-gray-600 mx-6 p-2 my-6 md:my-8 md:mx-12 rounded-lg drop-shadow-lg" id="about">
                <ProfileImage image={me} />
                <Card>
                   My name is Hunter Barton and I am a 23 year old software developer, photographer and musician. In 2020 I moved to Oklahoma City from
