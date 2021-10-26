@@ -17,15 +17,15 @@ export default function NavbarComponent({ children }) {
                <FaDev size="22" />
             </NavbarItem>
             <NavbarTitle>Hunter Barton Portfolio</NavbarTitle>
-            {children.map(child => {
-               return <NavbarItem>{child}</NavbarItem>;
+            {children.map((child, i) => {
+               return <NavbarItem key={i}>{child}</NavbarItem>;
             })}
          </Navbar>
          <Menu showMenu={showLinkMenu}>
             <a href="https://github.com/mythosmystery">
                <FiGithub size="22" />
             </a>
-            <a href="https://github.com/mythosmystery">
+            <a href="https://www.linkedin.com/in/hunter-barton-okc/">
                <FaLinkedin size="22" />
             </a>
          </Menu>

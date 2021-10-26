@@ -2,6 +2,8 @@ import Head from 'next/head';
 import Card, { CardBody, CardFooter, CardLight, CardTitle } from '../components/Card';
 import devCrowd from '../images/devcrowd.png';
 import me from '../images/me.jpg';
+import techBlog from '../images/tech.PNG';
+import bugTracker from '../images/bug-tracker.png';
 import ImageCard from '../components/ImageCard';
 import ProfileImage from '../components/ProfileImage';
 import NavbarComponent from '../components/NavbarComponent';
@@ -12,6 +14,8 @@ import Button from '../components/Button';
 import { FaHome } from 'react-icons/fa';
 export default function Home() {
    const [showCard, setShowCard] = useState(false);
+   const [showCard2, setShowCard2] = useState(false);
+   const [showCard3, setShowCard3] = useState(false);
    return (
       <body className="bg-gray-900 min-w-screen min-h-screen">
          <Head>
@@ -43,43 +47,85 @@ export default function Home() {
 
          <SkillsCard />
 
-         <ImageCard image={devCrowd}>
-            <CardTitle>Dev Crowd</CardTitle>
-            <CardBody>
-               A full-stack, mobile responsive social media site. Using React and Bootstrap for the frontend. On the backend this site uses Express,
-               MongoDB, and GraphQL. A responsive and user-friendly UI experience is paired with a fully featured backend for future features.
-            </CardBody>
-            <Button onClick={() => setShowCard(!showCard)}>Show {showCard ? 'less' : 'more'}</Button>
-            <CardLight show={showCard}>
-               <CardTitle>Technologies used</CardTitle>
-               <List>
-                  <li>React</li>
-                  <li>Express</li>
-                  <li>GraphQL</li>
-                  <li>Apollo</li>
-                  <li>JWT</li>
-                  <li>Bootstrap</li>
-               </List>
-            </CardLight>
-            <CardFooter>
-               <a href="https://github.com/mythosmystery/dev-crowd">Source Code</a>
-               <a href="https://dev-crowd.herokuapp.com/">Deployment</a>
-            </CardFooter>
-         </ImageCard>
+         <div className="lg:w-3/6 lg:mx-auto mx-6">
+            <ImageCard image={devCrowd}>
+               <CardTitle>Dev Crowd</CardTitle>
+               <CardBody>
+                  A full-stack, mobile responsive social media site. Using React and Bootstrap for the frontend. On the backend this site uses
+                  Express, MongoDB, and GraphQL. A responsive and user-friendly UI experience is paired with a fully featured backend for future
+                  features.
+               </CardBody>
+               <Button onClick={() => setShowCard(!showCard)}>Show {showCard ? 'less' : 'more'}</Button>
+               <CardLight show={showCard}>
+                  <CardTitle>Technologies used</CardTitle>
+                  <List>
+                     <li>React</li>
+                     <li>Express</li>
+                     <li>GraphQL</li>
+                     <li>Apollo</li>
+                     <li>JWT</li>
+                     <li>Bootstrap</li>
+                  </List>
+               </CardLight>
+               <CardFooter>
+                  <a href="https://github.com/mythosmystery/dev-crowd">Source Code</a>
+                  <a href="https://dev-crowd.herokuapp.com/">Deployment</a>
+               </CardFooter>
+            </ImageCard>
+         </div>
 
-         <div className="flex flex-col sm:flex-row">
-            <Card>
-               This is a test card with test things in it for testing stuff. Test card test card, this is a very nice test card. I need more text to
-               test this
-            </Card>
-            <Card>
-               This is a test card with test things in it for testing stuff. Test card test card, this is a very nice test card. I need more text to
-               test this
-            </Card>
-            <Card>
-               This is a test card with test things in it for testing stuff. Test card test card, this is a very nice test card. I need more text to
-               test this
-            </Card>
+         <div className="flex flex-col lg:flex-row">
+            <div className="mx-6 lg:ml-6 lg:mr-3">
+               <ImageCard image={bugTracker}>
+                  <CardTitle>A Super Simple Bug Tracking Tool</CardTitle>
+                  <CardBody>
+                     A full-stack, bug tracking app. Report and manage bugs easily with an intuitive user interface. Created with React, GraphQL,
+                     MongoDB, and Node.
+                  </CardBody>
+                  <Button onClick={() => setShowCard2(!showCard2)}>Show {showCard2 ? 'less' : 'more'}</Button>
+                  <CardLight show={showCard2}>
+                     <CardTitle>Technologies used</CardTitle>
+                     <List>
+                        <li>React</li>
+                        <li>Express</li>
+                        <li>GraphQL</li>
+                        <li>Apollo</li>
+                        <li>JWT</li>
+                        <li>Bootstrap</li>
+                     </List>
+                  </CardLight>
+                  <CardFooter>
+                     <a href="https://github.com/mythosmystery/bug-tracker">Source Code</a>
+                     <a href="https://hb-bug-tracker.herokuapp.com/">Deployment</a>
+                  </CardFooter>
+               </ImageCard>
+            </div>
+            <div className="mx-6 lg:ml-3 lg:mr-6">
+               <ImageCard image={techBlog}>
+                  <CardTitle>Tech Blog</CardTitle>
+                  <CardBody>
+                     A simple and responsive blogging site. This is a full-stack project created with Express, MySQL, Sequelize, and Handlebars.
+                     Create posts and leave comments on other posts. UI created with MaterializeCSS
+                  </CardBody>
+                  <Button onClick={() => setShowCard3(!showCard3)}>Show {showCard3 ? 'less' : 'more'}</Button>
+                  <CardLight show={showCard3}>
+                     <CardTitle>Technologies used</CardTitle>
+                     <List>
+                        <li>Node</li>
+                        <li>Express</li>
+                        <li>REST</li>
+                        <li>MySQL</li>
+                        <li>Sequelize</li>
+                        <li>Handlebars</li>
+                        <li>MaterialCSS</li>
+                     </List>
+                  </CardLight>
+                  <CardFooter>
+                     <a href="https://github.com/mythosmystery/tech-blog">Source Code</a>
+                     <a href="https://hb-tech-blog.herokuapp.com/">Deployment</a>
+                  </CardFooter>
+               </ImageCard>
+            </div>
          </div>
       </body>
    );

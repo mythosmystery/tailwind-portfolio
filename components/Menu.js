@@ -11,7 +11,7 @@ export default function Menu({ children, showMenu }) {
 }
 export function MenuItem({ children }) {
    return (
-      <div className="text-green-300 z-50 bg-gray-800 p-3 justify-center mb-2 rounded-md shadow-md hover:ring ring-green-200/50 active:bg-green-400 active:text-gray-800 flex">
+      <div className="text-green-300 z-50 bg-gray-800 p-3 justify-center mb-2 rounded-md shadow-md hover:rounded-xl hover:text-gray-300 hover:bg-gray-700 active:bg-green-400 active:text-gray-800 flex">
          {children}
       </div>
    );
