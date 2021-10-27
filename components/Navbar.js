@@ -47,5 +47,5 @@ export function NavbarItem({ children, onClick }) {
    );
 }
 export function NavbarTitle({ children }) {
-   return <div className="text-green-400 text-xl invisible md:visible m-auto cursor-default">{children}</div>;
+   return <div className="text-green-400 text-2xl invisible md:visible m-auto cursor-default">{children}</div>;
 }

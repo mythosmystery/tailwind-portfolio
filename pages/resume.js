@@ -20,9 +20,9 @@ export default function Resume() {
             <Link href="/resume">Resume</Link>
          </Navbar>
 
-         <div className="bg-white my-16 mx-6 md:mx-24 xl:mx-64 pt-20 sm:pt-24 pb-20 px-6 sm:px-16 md:px-24 drop-shadow-lg">
+         <div className="bg-white my-16 mx-6 md:mx-24 xl:mx-64 pt-20 sm:pt-24 pb-20 px-6 sm:px-16 md:px-24 drop-shadow-lg font-sans">
             <h1 className="text-center text-3xl font-bold border-b border-gray-400/50 pb-1.5">Hunter Barton</h1>
-            <p className="mt-4">
+            <p className="mt-4 text-center">
                Phone: (520) 780-9324 | Email:{' '}
                <a className="text-blue-800" href="mailto:hunterblakebarton@gmail.com">
                   hunterblakebarton@gmail.com
