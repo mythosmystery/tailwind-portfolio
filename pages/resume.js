@@ -1,6 +1,6 @@
 import { FaHome } from 'react-icons/fa';
 import Head from 'next/head';
-import Link from 'next/link';
+import a from 'next/link';
 import Navbar from '../components/Navbar';
 
 export default function Resume() {
@@ -11,16 +11,16 @@ export default function Resume() {
             <link rel="icon" href="/favicon.ico" />
          </Head>
          <Navbar title="Hunter Barton Resume">
-            <Link href="/">
+            <a href="/">
                <FaHome size="22" />
-            </Link>
-            <Link href="/#about">About</Link>
-            <Link href="/#skills">Skills</Link>
-            <Link href="/#projects">Projects</Link>
-            <Link href="/resume">Resume</Link>
+            </a>
+            <a href="/#about">About</a>
+            <a href="/#skills">Skills</a>
+            <a href="/#projects">Projects</a>
+            <a href="/resume">Resume</a>
          </Navbar>
 
-         <div className="bg-white my-16 h-[960px] mx-64 pt-24 pb-20 px-24">
+         <div className="bg-white my-16 h-[1440px] mx-64 pt-24 pb-20 px-24 drop-shadow-lg">
             <h1 className="text-center text-3xl font-bold border-b border-gray-400/50 pb-1.5">Hunter Barton</h1>
             <p className="mt-4">
                Phone: (520) 780-9324 | Email:{' '}
@@ -30,10 +30,10 @@ export default function Resume() {
                | Oklahoma City, 73103
             </p>
             <p className="mt-1.5 text-center">
-               | Linkedin:
+               | Linkedin:{' '}
                <a className="text-blue-800" href="https://linkedin.com/in/hunter-barton-okc">
                   linkedin.com/in/hunter-barton-okc/
-               </a>
+               </a>{' '}
                |
             </p>
             <p className="mt-1.5 text-center border-b border-gray-400/50 pb-4">
@@ -56,9 +56,67 @@ export default function Resume() {
             <p className="text-sm mt-0.5">
                <span className="font-bold">Applications:</span> Github, MongoDB, MySQL, VS Code, Arch Linux, Photoshop
             </p>
-            <p className="text-sm mt-0.5">
+            <p className="text-sm mt-0.5 border-b border-gray-300 pb-6">
                <span className="font-bold">Tools:</span> React, Express, GraphQL, Node, NextJS, Bootstrap, jQuery, ASP.net, Tailwind
             </p>
+            <h3 className="text-center font-bold mt-6 mb-1">Projects</h3>
+            <b className="text-sm">
+               Dev Crowd |{' '}
+               <a className="text-blue-800" href="https://github.com/mythosmystery/dev-crowd">
+                  github.com/mythosmystery/dev-crowd
+               </a>{' '}
+               |{' '}
+               <a className="text-blue-800" href="https://dev-crowd.heroku.com">
+                  dev-crowd.heroku.com
+               </a>
+            </b>
+            <ul className="list-disc list-inside text-sm px-6 mb-2">
+               <li>Summary: Full-stack social media app for developers using React, GraphQL, and MongoDB.</li>
+               <li>Features: User Authentication, Create, Read, Update and Delete</li>
+               <li>Role: Lead Developer</li>
+               <li>Tools: React, Node, GraphQL, Express, MongoDB, Mongoose, Bootstrap, JWT</li>
+            </ul>
+            <b className="text-sm mt-2">
+               Tailwind Portfolio |{' '}
+               <a className="text-blue-800 mt-2" href="https://github.com/mythosmystery/tailwind-portfolio">
+                  github.com/mythosmystery/tailwind-portfolio
+               </a>{' '}
+               |
+            </b>
+            <ul className="list-disc list-inside text-sm px-6 border-b border-gray-300 pb-6">
+               <li>Summary: A responsive and beautiful personal portfolio. Built using Next.js static generation</li>
+               <li>Features: Custom interface design, responsive navigation bar design</li>
+               <li>Role: Sole Developer</li>
+               <li>Tools: React, Next.JS, Tailwind CSS, Github Actions</li>
+            </ul>
+            <h2 className="text-center text-xl mt-6 mb-4 font-bold">Experience</h2>
+            <p className="font-bold">
+               September 2019 - June 2020<span className="mx-16">Hifi Workshop</span>
+               <span>Tucson, Arizona</span>
+            </p>
+            <p className="font-bold text-sm ml-6 my-1">Electronics Repair Technician</p>
+            <ul className="list-disc list-inside text-sm px-6 mb-8">
+               <li>Created a webapp for managing repair orders, optimizing the repair process.</li>
+               <li>Developed an online presence and boosted SEO for more customer visibility.</li>
+               <li>Worked with customers to find the best solution for their needs.</li>
+               <li>Collaborated in designing the storefront and workshop for efficient repairs and a fantastic customer experience</li>
+            </ul>
+            <p className="font-bold">
+               October 2015 - August 2019<span className="mx-16">Stereo Hospital</span>
+               <span>Tucson, Arizona</span>
+            </p>
+            <p className="font-bold text-sm ml-6 my-1">Online Sales/Project Manager</p>
+            <ul className="list-disc list-inside text-sm px-6 mb-2 pb-6 border-b border-gray-300">
+               <li>Supervised other employees to complete projects efficiently, aiding to better inventory management.</li>
+               <li>Oversaw all online sales, ensuring a quick turnaround for inventory and increased profit.</li>
+               <li>Diagnosed electronic equipment and found creative solutions to repair them.</li>
+               <li>Created IT solutions to aid in an optimal repair workflow, saving time and money.</li>
+            </ul>
+            <h5 className="font-bold text-lg my-4 mx-12">Education</h5>
+            <ul className="mx-20">
+               <li>Certificate in full-stack web develoment from Georgia Tech: 2021</li>
+               <li>Completed two semesters of computer science and Java programming at Pima Community College - Tucson, AZ</li>
+            </ul>
          </div>
       </body>
    );
