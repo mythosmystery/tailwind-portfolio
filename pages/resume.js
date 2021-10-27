@@ -113,7 +113,7 @@ export default function Resume() {
                <li>Created IT solutions to aid in an optimal repair workflow, saving time and money.</li>
             </ul>
             <h5 className="font-bold text-lg my-4 mx-12">Education</h5>
-            <ul className="mx-20">
+            <ul className="mx-8 md:mx-20">
                <li>Certificate in full-stack web develoment from Georgia Tech: 2021</li>
                <li>Completed two semesters of computer science and Java programming at Pima Community College - Tucson, AZ</li>
             </ul>
