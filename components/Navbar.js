@@ -2,6 +2,7 @@ import { FaLinkedin, FaDev } from 'react-icons/fa';
 import { FiGithub } from 'react-icons/fi';
 import { useState } from 'react';
 import Menu, { MenuButton } from './Menu';
+import Link from 'next/link';
 
 export default function Navbar({ children, title }) {
    const [showLinkMenu, setShowLinkMenu] = useState(false);
@@ -18,12 +19,12 @@ export default function Navbar({ children, title }) {
             })}
          </NavbarPanel>
          <Menu showMenu={showLinkMenu}>
-            <a href="https://github.com/mythosmystery">
+            <Link href="https://github.com/mythosmystery">
                <FiGithub size="22" />
-            </a>
-            <a href="https://www.linkedin.com/in/hunter-barton-okc/">
+            </Link>
+            <Link href="https://www.linkedin.com/in/hunter-barton-okc/">
                <FaLinkedin size="22" />
-            </a>
+            </Link>
          </Menu>
          <MenuButton onClick={() => setShowMenu(!showMenu)} />
          <Menu showMenu={showMenu}>{children}</Menu>

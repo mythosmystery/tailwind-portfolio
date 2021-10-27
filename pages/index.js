@@ -5,6 +5,7 @@ import techBlog from '../images/tech.PNG';
 import bugTracker from '../images/bug-tracker.png';
 //components
 import Head from 'next/head';
+import Link from 'next/link';
 import Card, { CardBody, CardFooter, CardLight, CardTitle } from '../components/Card';
 import ImageCard from '../components/ImageCard';
 import ProfileImage from '../components/ProfileImage';
@@ -28,13 +29,13 @@ export default function Home() {
             <link rel="icon" href="/favicon.ico" />
          </Head>
          <Navbar title="Hunter Barton Portfolio">
-            <a href="#">
+            <Link href="#">
                <FaHome size="22" />
-            </a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="/resume">Resume</a>
+            </Link>
+            <Link href="#about">About</Link>
+            <Link href="#skills">Skills</Link>
+            <Link href="#projects">Projects</Link>
+            <Link href="/resume">Resume</Link>
          </Navbar>
 
          <div className="flex flex-col sm:flex-row bg-gray-600 mx-6 p-2 my-6 md:my-8 md:mx-12 rounded-lg drop-shadow-lg" id="about">
@@ -73,8 +74,8 @@ export default function Home() {
                   </List>
                </CardLight>
                <CardFooter>
-                  <a href="https://github.com/mythosmystery/dev-crowd">Source Code</a>
-                  <a href="https://dev-crowd.herokuapp.com/">Deployment</a>
+                  <Link href="https://github.com/mythosmystery/dev-crowd">Source Code</Link>
+                  <Link href="https://dev-crowd.herokuapp.com/">Deployment</Link>
                </CardFooter>
             </ImageCard>
          </div>
@@ -100,8 +101,8 @@ export default function Home() {
                      </List>
                   </CardLight>
                   <CardFooter>
-                     <a href="https://github.com/mythosmystery/bug-tracker">Source Code</a>
-                     <a href="https://hb-bug-tracker.herokuapp.com/">Deployment</a>
+                     <Link href="https://github.com/mythosmystery/bug-tracker">Source Code</Link>
+                     <Link href="https://hb-bug-tracker.herokuapp.com/">Deployment</Link>
                   </CardFooter>
                </ImageCard>
             </div>
@@ -126,8 +127,8 @@ export default function Home() {
                      </List>
                   </CardLight>
                   <CardFooter>
-                     <a href="https://github.com/mythosmystery/tech-blog">Source Code</a>
-                     <a href="https://hb-tech-blog.herokuapp.com/">Deployment</a>
+                     <Link href="https://github.com/mythosmystery/tech-blog">Source Code</Link>
+                     <Link href="https://hb-tech-blog.herokuapp.com/">Deployment</Link>
                   </CardFooter>
                </ImageCard>
             </div>

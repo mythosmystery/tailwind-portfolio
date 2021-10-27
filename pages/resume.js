@@ -1,5 +1,6 @@
 import { FaHome } from 'react-icons/fa';
 import Head from 'next/head';
+import Link from 'next/link';
 import Navbar from '../components/Navbar';
 
 export default function Resume() {
@@ -10,13 +11,13 @@ export default function Resume() {
             <link rel="icon" href="/favicon.ico" />
          </Head>
          <Navbar title="Hunter Barton Resume">
-            <a href="/">
+            <Link href="/">
                <FaHome size="22" />
-            </a>
-            <a href="/#about">About</a>
-            <a href="/#skills">Skills</a>
-            <a href="/#projects">Projects</a>
-            <a href="/resume">Resume</a>
+            </Link>
+            <Link href="/#about">About</Link>
+            <Link href="/#skills">Skills</Link>
+            <Link href="/#projects">Projects</Link>
+            <Link href="/resume">Resume</Link>
          </Navbar>
 
          <div className="bg-white my-16 h-[960px] mx-64 pt-24 pb-20 px-24">
