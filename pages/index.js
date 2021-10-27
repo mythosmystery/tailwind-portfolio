@@ -1,17 +1,22 @@
-import Head from 'next/head';
-import Card, { CardBody, CardFooter, CardLight, CardTitle } from '../components/Card';
+//images
 import devCrowd from '../images/devcrowd.png';
 import me from '../images/me.jpg';
 import techBlog from '../images/tech.PNG';
 import bugTracker from '../images/bug-tracker.png';
+//components
+import Head from 'next/head';
+import Card, { CardBody, CardFooter, CardLight, CardTitle } from '../components/Card';
 import ImageCard from '../components/ImageCard';
 import ProfileImage from '../components/ProfileImage';
-import NavbarComponent from '../components/NavbarComponent';
+import Navbar from '../components/Navbar';
 import SkillsCard from '../components/SkillsCard';
-import List, { ListTitle } from '../components/List';
-import { useState } from 'react';
+import List from '../components/List';
+import Footer from '../components/Footer';
 import Button from '../components/Button';
+
 import { FaHome } from 'react-icons/fa';
+import { useState } from 'react';
+
 export default function Home() {
    const [showCard, setShowCard] = useState(false);
    const [showCard2, setShowCard2] = useState(false);
@@ -22,7 +27,7 @@ export default function Home() {
             <title>Tailwind Portfolio</title>
             <link rel="icon" href="/favicon.ico" />
          </Head>
-         <NavbarComponent>
+         <Navbar>
             <a href="#">
                <FaHome size="22" />
             </a>
@@ -30,7 +35,7 @@ export default function Home() {
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="/resume">Resume</a>
-         </NavbarComponent>
+         </Navbar>
 
          <div className="flex flex-col sm:flex-row bg-gray-600 mx-6 p-2 my-6 md:my-8 md:mx-12 rounded-lg drop-shadow-lg" id="about">
             <ProfileImage image={me} />
@@ -127,6 +132,7 @@ export default function Home() {
                </ImageCard>
             </div>
          </div>
+         <Footer>2021 Hunter Barton</Footer>
       </body>
    );
 }
