@@ -9,7 +9,7 @@ import Link from 'next/link';
 import Card, { CardBody, CardFooter, CardLight, CardTitle } from '../components/Card';
 import ImageCard from '../components/ImageCard';
 import ProfileImage from '../components/ProfileImage';
-import Navbar from '../components/Navbar';
+import Navbar, { NavbarItem } from '../components/Navbar';
 import SkillsCard from '../components/SkillsCard';
 import List from '../components/List';
 import Footer from '../components/Footer';
@@ -30,13 +30,13 @@ export default function Home() {
             <link rel="icon" href="/favicon.ico" />
          </Head>
          <Navbar title="Hunter Barton Portfolio">
-            <Link href="#">
+            <NavbarItem href="#">
                <FaHome size="22" />
-            </Link>
-            <Link href="#about">About</Link>
-            <Link href="#skills">Skills</Link>
-            <Link href="#projects">Projects</Link>
-            <Link href="/resume">Resume</Link>
+            </NavbarItem>
+            <NavbarItem href="#about">About</NavbarItem>
+            <NavbarItem href="#skills">Skills</NavbarItem>
+            <NavbarItem href="#projects">Projects</NavbarItem>
+            <NavbarItem href="/resume">Resume</NavbarItem>
          </Navbar>
 
          <Header id="about">About Me</Header>

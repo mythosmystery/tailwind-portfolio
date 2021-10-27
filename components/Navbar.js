@@ -14,9 +14,7 @@ export default function Navbar({ children, title }) {
                <FaDev size="22" />
             </NavbarItem>
             <NavbarTitle>{title}</NavbarTitle>
-            {children.map((child, i) => {
-               return <NavbarItem key={i}>{child}</NavbarItem>;
-            })}
+            {children}
          </NavbarPanel>
          <Menu showMenu={showLinkMenu}>
             <Link href="https://github.com/mythosmystery">
@@ -36,14 +34,16 @@ export function NavbarPanel({ children }) {
       <div className="flex-row hidden sm:flex sticky z-20 bg-gray-900 top-0 left-0 w-min-screen h-16 justify-end px-2 drop-shadow-lg">{children}</div>
    );
 }
-export function NavbarItem({ children, onClick }) {
+export function NavbarItem({ children, onClick, href }) {
    return (
-      <div
-         onClick={onClick}
-         className="relative flex bg-gray-800 text-green-400 justify-center items-center my-2 mx-1 p-3 rounded-md shadow-md hover:rounded-xl hover:text-gray-300 hover:bg-gray-700 active:text-gray-300 active:bg-green-400 transition-all duration-100 ease-in cursor-pointer"
-      >
-         {children}
-      </div>
+      <Link href={href || ''}>
+         <div
+            onClick={onClick}
+            className="relative flex bg-gray-800 text-green-400 justify-center items-center my-2 mx-1 p-3 rounded-md shadow-md hover:rounded-xl hover:text-gray-300 hover:bg-gray-700 active:text-gray-300 active:bg-green-400 transition-all duration-100 ease-in cursor-pointer"
+         >
+            {children}
+         </div>
+      </Link>
    );
 }
 export function NavbarTitle({ children }) {

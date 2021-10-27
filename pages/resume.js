@@ -1,7 +1,7 @@
 import { FaHome } from 'react-icons/fa';
 import Head from 'next/head';
 import Link from 'next/link';
-import Navbar from '../components/Navbar';
+import Navbar, { NavbarItem } from '../components/Navbar';
 
 export default function Resume() {
    return (
@@ -11,13 +11,13 @@ export default function Resume() {
             <link rel="icon" href="/favicon.ico" />
          </Head>
          <Navbar title="Hunter Barton Resume">
-            <Link href="/">
+            <NavbarItem href="/">
                <FaHome size="22" />
-            </Link>
-            <Link href="/#about">About</Link>
-            <Link href="/#skills">Skills</Link>
-            <Link href="/#projects">Projects</Link>
-            <Link href="/resume">Resume</Link>
+            </NavbarItem>
+            <NavbarItem href="/#about">About</NavbarItem>
+            <NavbarItem href="/#skills">Skills</NavbarItem>
+            <NavbarItem href="/#projects">Projects</NavbarItem>
+            <NavbarItem href="/resume">Resume</NavbarItem>
          </Navbar>
 
          <div className="bg-white my-16 mx-6 md:mx-24 xl:mx-64 pt-20 sm:pt-24 pb-20 px-6 sm:px-16 md:px-24 drop-shadow-lg font-sans">
@@ -112,8 +112,8 @@ export default function Resume() {
                <li>Diagnosed electronic equipment and found creative solutions to repair them.</li>
                <li>Created IT solutions to aid in an optimal repair workflow, saving time and money.</li>
             </ul>
-            <h5 className="font-bold text-lg my-4 mx-12">Education</h5>
-            <ul className="ml-6 md:mx-20">
+            <h5 className="font-bold text-xl my-4 mx-12 text-center">Education</h5>
+            <ul className="list-disc list-inside text-sm pl-6">
                <li>Certificate in full-stack web develoment from Georgia Tech: 2021</li>
                <li>Completed two semesters of computer science and Java programming at Pima Community College - Tucson, AZ</li>
             </ul>
