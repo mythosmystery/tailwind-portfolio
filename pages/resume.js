@@ -83,7 +83,7 @@ export default function Resume() {
                </a>{' '}
                |
             </b>
-            <ul className="list-disc list-inside text-sm px-6 border-b border-gray-300 pb-6">
+            <ul className="list-disc list-inside text-sm pl-6 border-b border-gray-300 pb-6">
                <li>Summary: A responsive and beautiful personal portfolio. Built using Next.js static generation</li>
                <li>Features: Custom interface design, responsive navigation bar design</li>
                <li>Role: Sole Developer</li>
@@ -95,7 +95,7 @@ export default function Resume() {
                <span>Tucson, Arizona</span>
             </p>
             <p className="font-bold text-sm ml-6 my-1">Electronics Repair Technician</p>
-            <ul className="list-disc list-inside text-sm px-6 mb-8">
+            <ul className="list-disc list-inside text-sm pl-6 mb-8">
                <li>Created a webapp for managing repair orders, optimizing the repair process.</li>
                <li>Developed an online presence and boosted SEO for more customer visibility.</li>
                <li>Worked with customers to find the best solution for their needs.</li>
@@ -106,14 +106,14 @@ export default function Resume() {
                <span>Tucson, Arizona</span>
             </p>
             <p className="font-bold text-sm ml-6 my-1">Online Sales/Project Manager</p>
-            <ul className="list-disc list-inside text-sm px-6 mb-2 pb-6 border-b border-gray-300">
+            <ul className="list-disc list-inside text-sm pl-6 mb-2 pb-6 border-b border-gray-300">
                <li>Supervised other employees to complete projects efficiently, aiding to better inventory management.</li>
                <li>Oversaw all online sales, ensuring a quick turnaround for inventory and increased profit.</li>
                <li>Diagnosed electronic equipment and found creative solutions to repair them.</li>
                <li>Created IT solutions to aid in an optimal repair workflow, saving time and money.</li>
             </ul>
             <h5 className="font-bold text-lg my-4 mx-12">Education</h5>
-            <ul className="mx-6 md:mx-20">
+            <ul className="ml-6 md:mx-20">
                <li>Certificate in full-stack web develoment from Georgia Tech: 2021</li>
                <li>Completed two semesters of computer science and Java programming at Pima Community College - Tucson, AZ</li>
             </ul>
