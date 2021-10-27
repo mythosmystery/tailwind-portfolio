@@ -27,7 +27,7 @@ export default function Home() {
             <title>Tailwind Portfolio</title>
             <link rel="icon" href="/favicon.ico" />
          </Head>
-         <Navbar>
+         <Navbar title="Hunter Barton Portfolio">
             <a href="#">
                <FaHome size="22" />
             </a>
@@ -52,7 +52,7 @@ export default function Home() {
 
          <SkillsCard />
 
-         <div className="lg:w-3/6 lg:mx-auto mx-6">
+         <div className="lg:w-3/6 lg:mx-auto mx-6" id="projects">
             <ImageCard image={devCrowd}>
                <CardTitle>Dev Crowd</CardTitle>
                <CardBody>

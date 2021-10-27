@@ -3,7 +3,7 @@ import { FiGithub } from 'react-icons/fi';
 import { useState } from 'react';
 import Menu, { MenuButton } from './Menu';
 
-export default function Navbar({ children }) {
+export default function Navbar({ children, title }) {
    const [showLinkMenu, setShowLinkMenu] = useState(false);
    const [showMenu, setShowMenu] = useState(false);
    return (
@@ -12,7 +12,7 @@ export default function Navbar({ children }) {
             <NavbarItem onClick={() => setShowLinkMenu(!showLinkMenu)}>
                <FaDev size="22" />
             </NavbarItem>
-            <NavbarTitle>Hunter Barton Portfolio</NavbarTitle>
+            <NavbarTitle>{title}</NavbarTitle>
             {children.map((child, i) => {
                return <NavbarItem key={i}>{child}</NavbarItem>;
             })}
