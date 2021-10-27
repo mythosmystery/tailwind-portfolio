@@ -5,5 +5,5 @@ module.exports = {
       path: 'https://mythosmystery.github.io/tailwind-portfolio',
    },
    assetPrefix: isProd ? '/tailwind-portfolio/' : '',
-   env: isProd ? '/tailwind-portfolio/' : '',
+   basePath: isProd ? '/tailwind-portfolio' : '',
 };
