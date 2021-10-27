@@ -1,6 +1,6 @@
 module.exports = {
    images: {
       loader: 'imgix',
-      path: 'https://mythosmyster.github.io/tailwind-portfolio/',
+      path: 'https://mythosmystery.github.io/tailwind-portfolio/',
    },
 };
