@@ -54,10 +54,10 @@ export default function Resume() {
                <span className="font-bold">Languages:</span> Javascript, Typescript, HTML, CSS, Java, Bash, C#, and SQL
             </p>
             <p className="text-sm mt-0.5">
-               <span className="font-bold">Applications:</span> Github, MongoDB, MySQL, VS Code, Arch Linux, Photoshop
+               <span className="font-bold">Applications:</span> Github, MongoDB, MySQL, PostgreSQL, VS Code, Arch Linux, Photoshop
             </p>
             <p className="text-sm mt-0.5 border-b border-gray-300 pb-6">
-               <span className="font-bold">Tools:</span> React, Express, GraphQL, Node, NextJS, Bootstrap, jQuery, ASP.net, Tailwind
+               <span className="font-bold">Tools:</span> React, Express, GraphQL, Node, Next.js, TailwindCSS, TypeORM, URQL, Mongoose
             </p>
             <h3 className="text-center font-bold mt-6 mb-1">Projects</h3>
             <b className="text-sm">
