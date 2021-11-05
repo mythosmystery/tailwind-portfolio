@@ -1,8 +1,8 @@
 //images
 import devCrowd from '../images/devcrowd.png';
 import me from '../images/me.jpg';
-import techBlog from '../images/tech.PNG';
 import bugTracker from '../images/bug-tracker.png';
+import notes from '../images/notes.png';
 //components
 import Head from 'next/head';
 import Link from 'next/link';
@@ -61,28 +61,36 @@ export default function Home() {
          <Header id="projects">Projects</Header>
 
          <div className="lg:w-3/6 lg:mx-auto mx-6">
-            <ImageCard image={devCrowd}>
-               <CardTitle>Dev Crowd</CardTitle>
+            <ImageCard image={notes}>
+               <CardTitle>TypeNotes</CardTitle>
                <CardBody>
-                  A full-stack, mobile responsive social media site. Using React and Bootstrap for the frontend. On the backend this site uses
-                  Express, MongoDB, and GraphQL. A responsive and user-friendly UI experience is paired with a fully featured backend for future
-                  features.
+                  A full-stack Typescript application. Create, Read, Update, and Delete notes that are saved to each user. Access all your notes from
+                  anywhere. Built using Typescript, React, Next.js, TailwindCSS, GraphQL, TypeORM, TypeGraphql, Express, Apollo Server, URQL, and
+                  Redis. It stores each user session in a Redis database, and stores all notes and user information in a PostgreSQL database using
+                  TypeORM for modelling and interacting with the data. It uses TypeGraphql on the backend and URQL on the frontend to pass Graphql
+                  data between client and server. This data is responsively rendered and manipulated using React and Next.js. This is styled by
+                  Tailwind CSS.
                </CardBody>
                <Button onClick={() => setShowCard(!showCard)}>Show {showCard ? 'less' : 'more'}</Button>
                <CardLight show={showCard}>
                   <CardTitle>Technologies used</CardTitle>
                   <List>
+                     <li>Typescript</li>
                      <li>React</li>
-                     <li>Express</li>
+                     <li>Next.js</li>
+                     <li>TailwindCSS</li>
+                     <li>PostgreSQL</li>
+                     <li>TypeORM</li>
+                     <li>TypeGraphql</li>
                      <li>GraphQL</li>
-                     <li>Apollo</li>
-                     <li>JWT</li>
-                     <li>Bootstrap</li>
+                     <li>URQL</li>
+                     <li>Apollo Server</li>
                   </List>
                </CardLight>
                <CardFooter>
-                  <Link href="https://github.com/mythosmystery/dev-crowd">Source Code</Link>
-                  <Link href="https://dev-crowd.herokuapp.com/">Deployment</Link>
+                  <Link href="https://github.com/mythosmystery/notes-web-frontend">Client Source</Link>
+                  <Link href="https://github.com/mythosmystery/notes-backend">Server Source</Link>
+                  <Link href="https://mythosmystery.github.io/notes-web-frontend">Deployment</Link>
                </CardFooter>
             </ImageCard>
          </div>
@@ -114,28 +122,28 @@ export default function Home() {
                </ImageCard>
             </div>
             <div className="mx-6 lg:ml-3 lg:mr-6">
-               <ImageCard image={techBlog}>
-                  <CardTitle>Tech Blog</CardTitle>
+               <ImageCard image={devCrowd}>
+                  <CardTitle>Dev Crowd</CardTitle>
                   <CardBody>
-                     A simple and responsive blogging site. This is a full-stack project created with Express, MySQL, Sequelize, and Handlebars.
-                     Create posts and leave comments on other posts. UI created with MaterializeCSS
+                     A full-stack, mobile responsive social media site. Using React and Bootstrap for the frontend. On the backend this site uses
+                     Express, MongoDB, and GraphQL. A responsive and user-friendly UI experience is paired with a fully featured backend for future
+                     features.
                   </CardBody>
-                  <Button onClick={() => setShowCard3(!showCard3)}>Show {showCard3 ? 'less' : 'more'}</Button>
-                  <CardLight show={showCard3}>
+                  <Button onClick={() => setShowCard(!showCard)}>Show {showCard ? 'less' : 'more'}</Button>
+                  <CardLight show={showCard}>
                      <CardTitle>Technologies used</CardTitle>
                      <List>
-                        <li>Node</li>
+                        <li>React</li>
                         <li>Express</li>
-                        <li>REST</li>
-                        <li>MySQL</li>
-                        <li>Sequelize</li>
-                        <li>Handlebars</li>
-                        <li>MaterialCSS</li>
+                        <li>GraphQL</li>
+                        <li>Apollo</li>
+                        <li>JWT</li>
+                        <li>Bootstrap</li>
                      </List>
                   </CardLight>
                   <CardFooter>
-                     <Link href="https://github.com/mythosmystery/tech-blog">Source Code</Link>
-                     <Link href="https://hb-tech-blog.herokuapp.com/">Deployment</Link>
+                     <Link href="https://github.com/mythosmystery/dev-crowd">Source Code</Link>
+                     <Link href="https://dev-crowd.herokuapp.com/">Deployment</Link>
                   </CardFooter>
                </ImageCard>
             </div>
