@@ -1,15 +1,15 @@
+import { FC } from 'react';
 import List from './List';
-import { ListTitle, ListItem } from './List';
-export default function SkillsCard() {
+const SkillsCard: FC = () => {
    return (
       <div className="bg-gray-800 text-green-400 mx-6 sm:w-2/4 lg:w-1/4 sm:mx-auto p-4 rounded-lg shadow-lg">
-         <ListTitle>Languages</ListTitle>
+         <List.Title>Languages</List.Title>
          <List>
             <li>Typescript</li>
             <li>Javascript</li>
             <li>Java</li>
          </List>
-         <ListTitle>Technologies</ListTitle>
+         <List.Title>Technologies</List.Title>
          <List>
             <li>React</li>
             <li>Node</li>
@@ -24,4 +24,5 @@ export default function SkillsCard() {
          </List>
       </div>
    );
-}
+};
+export default SkillsCard;

@@ -1,9 +1,9 @@
 import { FaHome } from 'react-icons/fa';
 import Head from 'next/head';
-import Link from 'next/link';
-import Navbar, { NavbarItem } from '../components/Navbar';
+import Navbar from '../components/Navbar';
+import { FC } from 'react';
 
-export default function Resume() {
+const Resume: FC = () => {
    return (
       <body className="bg-gray-900 min-w-screen min-h-screen">
          <Head>
@@ -11,13 +11,13 @@ export default function Resume() {
             <link rel="icon" href="/favicon.ico" />
          </Head>
          <Navbar title="Hunter Barton Resume">
-            <NavbarItem href="/">
+            <Navbar.Item href="/">
                <FaHome size="22" />
-            </NavbarItem>
-            <NavbarItem href="/#about">About</NavbarItem>
-            <NavbarItem href="/#skills">Skills</NavbarItem>
-            <NavbarItem href="/#projects">Projects</NavbarItem>
-            <NavbarItem href="/resume">Resume</NavbarItem>
+            </Navbar.Item>
+            <Navbar.Item href="/#about">About</Navbar.Item>
+            <Navbar.Item href="/#skills">Skills</Navbar.Item>
+            <Navbar.Item href="/#projects">Projects</Navbar.Item>
+            <Navbar.Item href="/resume">Resume</Navbar.Item>
          </Navbar>
 
          <div className="bg-white my-16 mx-6 md:mx-24 xl:mx-64 pt-20 sm:pt-24 pb-20 px-6 sm:px-16 md:px-24 shadow-lg font-sans">
@@ -140,4 +140,5 @@ export default function Resume() {
          </div>
       </body>
    );
-}
+};
+export default Resume;

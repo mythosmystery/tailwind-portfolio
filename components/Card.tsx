@@ -1,20 +1,31 @@
-export default function Card({ children }) {
+import { FC, ReactNode } from 'react';
+
+interface CardProps {
+   show: boolean;
+}
+
+const Card: FC = ({ children }) => {
    return <div className="flex text-gray-300 bg-gray-800 p-3 shadow-md mx-6 my-4 rounded-md">{children}</div>;
-}
-export function CardTitle({ children }) {
+};
+const Title: FC = ({ children }) => {
    return <h2 className="text-green-400 text-2xl my-2">{children}</h2>;
-}
-export function CardBody({ children }) {
+};
+const Body: FC = ({ children }) => {
    return <p className="mx-6 my-2 font-sans">{children}</p>;
-}
-export function CardLight({ children, show }) {
+};
+const Light: FC<CardProps> = ({ children, show }) => {
    return (
       <div className={`flex flex-col bg-gray-700 sm:w-2/4 mx-6 px-4 sm:px-9 pt-1 pb-4 my-4 sm:mx-auto rounded-md shadow-lg ${show ? '' : 'hidden'}`}>
          {children}
       </div>
    );
+};
+
+interface FooterProps {
+   children: Array<ReactNode>;
 }
-export function CardFooter({ children }) {
+
+const Footer: FC<FooterProps> = ({ children }) => {
    return (
       <div className="flex flex-row mt-2">
          <div className="border-t border-r border-gray-700 w-2/4 text-center text-yellow-600 text-lg pt-6 pb-3 hover:text-indigo-900 hover:cursor-pointer">
@@ -25,4 +36,5 @@ export function CardFooter({ children }) {
          </div>
       </div>
    );
-}
+};
+export default Object.assign(Card, { Title, Light, Footer, Body });

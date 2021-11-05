@@ -1,12 +1,12 @@
-import { useState } from 'react';
+import { AnchorHTMLAttributes, FC, useState } from 'react';
 import { FaAddressCard, FaLinkedin } from 'react-icons/fa';
 import { FiGithub, FiPhoneCall } from 'react-icons/fi';
 import { MdOutlineMail } from 'react-icons/md';
 
-export default function Footer({ children }) {
+const Footer: FC = () => {
    const [showPhone, setShowPhone] = useState(false);
    const [showAddress, setShowAddress] = useState(false);
-   const copy = input => {
+   const copy = (input: string) => {
       navigator.clipboard.writeText(input);
    };
    return (
@@ -38,29 +38,31 @@ export default function Footer({ children }) {
          </div>
 
          <div className="flex flex-row items-center justify-center gap-6 sm:gap-12 md:gap-16 lg:gap-28 w-full bg-gray-800 text-green-400 text-5xl py-5">
-            <FooterItem href="https://github.com/mythosmystery">
+            <Item href="https://github.com/mythosmystery">
                <FiGithub />
-            </FooterItem>
-            <FooterItem href="https://linkedin.com/in/hunter-barton-okc">
+            </Item>
+            <Item href="https://linkedin.com/in/hunter-barton-okc">
                <FaLinkedin />
-            </FooterItem>
-            <FooterItem href="mailto:hunterblakebarton@gmail.com">
+            </Item>
+            <Item href="mailto:hunterblakebarton@gmail.com">
                <MdOutlineMail size="56" />
-            </FooterItem>
-            <FooterItem onClick={() => setShowPhone(!showPhone)}>
+            </Item>
+            <Item onClick={() => setShowPhone(!showPhone)}>
                <FiPhoneCall id="phone" />
-            </FooterItem>
-            <FooterItem onClick={() => setShowAddress(!showAddress)}>
+            </Item>
+            <Item onClick={() => setShowAddress(!showAddress)}>
                <FaAddressCard id="address" />
-            </FooterItem>
+            </Item>
          </div>
       </>
    );
-}
-export function FooterItem({ children, href, onClick }) {
+};
+
+const Item: FC<AnchorHTMLAttributes<HTMLAnchorElement>> = props => {
    return (
-      <a href={href} onClick={onClick} className="hover:text-gray-200 hover:scale-125 active:scale-150 transition-all duration-200 ease-linear">
-         {children}
+      <a className="hover:text-gray-200 hover:scale-125 active:scale-150 transition-all duration-200 ease-linear" {...props}>
+         {props.children}
       </a>
    );
-}
+};
+export default Object.assign(Footer, { Item });

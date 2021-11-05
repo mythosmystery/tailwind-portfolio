@@ -1,21 +1,26 @@
 import { FaLinkedin, FaDev } from 'react-icons/fa';
 import { FiGithub } from 'react-icons/fi';
-import { useState } from 'react';
-import Menu, { MenuButton } from './Menu';
+import { FC, ReactNode, useState } from 'react';
+import Menu from './Menu';
 import Link from 'next/link';
 
-export default function Navbar({ children, title }) {
+interface NavbarProps {
+   title: string;
+   children: Array<ReactNode>;
+}
+
+const Navbar: FC<NavbarProps> = ({ children, title }) => {
    const [showLinkMenu, setShowLinkMenu] = useState(false);
    const [showMenu, setShowMenu] = useState(false);
    return (
       <>
-         <NavbarPanel>
-            <NavbarItem onClick={() => setShowLinkMenu(!showLinkMenu)}>
+         <Panel>
+            <Item onClick={() => setShowLinkMenu(!showLinkMenu)}>
                <FaDev size="22" />
-            </NavbarItem>
-            <NavbarTitle>{title}</NavbarTitle>
+            </Item>
+            <Title>{title}</Title>
             {children}
-         </NavbarPanel>
+         </Panel>
          <Menu showMenu={showLinkMenu}>
             <Link href="https://github.com/mythosmystery">
                <FiGithub size="22" />
@@ -24,17 +29,23 @@ export default function Navbar({ children, title }) {
                <FaLinkedin size="22" />
             </Link>
          </Menu>
-         <MenuButton onClick={() => setShowMenu(!showMenu)} />
+         <Menu.Button onClick={() => setShowMenu(!showMenu)} />
          <Menu showMenu={showMenu}>{children}</Menu>
       </>
    );
-}
-export function NavbarPanel({ children }) {
+};
+const Panel: FC = ({ children }) => {
    return (
       <div className="flex-row hidden sm:flex sticky z-20 bg-gray-900 top-0 left-0 w-min-screen h-16 justify-end px-2 drop-shadow-lg">{children}</div>
    );
+};
+
+interface ItemProps {
+   onClick?: () => void;
+   href?: string;
 }
-export function NavbarItem({ children, onClick, href }) {
+
+const Item: FC<ItemProps> = ({ children, onClick, href }) => {
    return (
       <Link href={href || ''}>
          <div
@@ -45,7 +56,8 @@ export function NavbarItem({ children, onClick, href }) {
          </div>
       </Link>
    );
-}
-export function NavbarTitle({ children }) {
+};
+const Title: FC = ({ children }) => {
    return <div className="text-green-400 text-2xl invisible md:visible m-auto cursor-default">{children}</div>;
-}
+};
+export default Object.assign(Navbar, { Item, Panel, Title });
