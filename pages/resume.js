@@ -20,7 +20,7 @@ export default function Resume() {
             <NavbarItem href="/resume">Resume</NavbarItem>
          </Navbar>
 
-         <div className="bg-white my-16 mx-6 md:mx-24 xl:mx-64 pt-20 sm:pt-24 pb-20 px-6 sm:px-16 md:px-24 drop-shadow-lg font-sans">
+         <div className="bg-white my-16 mx-6 md:mx-24 xl:mx-64 pt-20 sm:pt-24 pb-20 px-6 sm:px-16 md:px-24 shadow-lg font-sans">
             <h1 className="text-center text-3xl font-bold border-b border-gray-400/50 pb-1.5">Hunter Barton</h1>
             <p className="mt-4 text-center">
                Phone: (520) 780-9324 | Email:{' '}
@@ -46,8 +46,8 @@ export default function Resume() {
             <h2 className="text-center font-bold mt-6">Summary</h2>
             <p className="text-sm">
                Full-stack web developer utilizing an electronics repair background to solve problems logically and precisely. Able to creatively and
-               efficiently invent solutions. Detail-oriented and quick at learning new skills. Well versed in Javascript, HTML, CSS, C#, and Java.
-               Earned a certificate in full-stack web development from Georgia Tech.
+               efficiently invent solutions. Detail-oriented and quick at learning new skills. Well versed in Javascript, Typescript, HTML, CSS, and
+               Java. Earned a certificate in full-stack web development from Georgia Tech.
             </p>
             <h3 className="text-center font-bold mt-6">Technical Skills</h3>
             <p className="text-sm mt-0.5">
