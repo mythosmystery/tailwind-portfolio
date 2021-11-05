@@ -76,6 +76,26 @@ export default function Resume() {
                <li>Role: Lead Developer</li>
                <li>Tools: React, Node, GraphQL, Express, MongoDB, Mongoose, Bootstrap, JWT</li>
             </ul>
+            <b className="text-sm">
+               TypeNotes |{' '}
+               <a className="text-blue-800" href="https://github.com/mythosmystery/notes-web-frontend">
+                  github.com/mythosmystery/notes-web-frontend
+               </a>{' '}
+               |{' '}
+               <a className="text-blue-800" href="https://github.com/mythosmystery/notes-backend">
+                  github.com/mythosmystery/notes-backend
+               </a>{' '}
+               |{' '}
+               <a className="text-blue-800" href="https://mythosmystery.github.io/notes-web-frontend">
+                  mythosmystery.github.io/notes-web-frontend
+               </a>
+            </b>
+            <ul className="list-disc list-inside text-sm px-6 mb-2">
+               <li>Summary: Full-stack note taking app built in Typescript</li>
+               <li>Features: User Authentication, Custom UI, End-to-end typings</li>
+               <li>Role: Sole Developer</li>
+               <li>Tools: React, Next.js, GraphQL, PostgreSQL, TypeORM, TailwindCSS, Redis, URQL</li>
+            </ul>
             <b className="text-sm mt-2">
                Tailwind Portfolio |{' '}
                <a className="text-blue-800 mt-2" href="https://github.com/mythosmystery/tailwind-portfolio">
