@@ -4,6 +4,7 @@ import me from '../images/me.jpg';
 import bugTracker from '../images/bug-tracker.png';
 import notes from '../images/notes.png';
 import markdown from '../images/markdown.png';
+import weather from '../images/weather-light.png';
 //components
 import Head from 'next/head';
 import Link from 'next/link';
@@ -24,6 +25,8 @@ const Home: FC = () => {
    const [showCard, setShowCard] = useState(false);
    const [showCard2, setShowCard2] = useState(false);
    const [showCard3, setShowCard3] = useState(false);
+   const [showCard4, setShowCard4] = useState(false);
+   const [showCard5, setShowCard5] = useState(false);
    return (
       <body className='bg-gray-900 min-w-screen min-h-screen font-mono'>
          <Head>
@@ -101,6 +104,61 @@ const Home: FC = () => {
 
          <div className='flex flex-col lg:flex-row'>
             <div className='mx-6 lg:ml-6 lg:mr-3'>
+               <ImageCard image={weather}>
+                  <Card.Title>Next Gen Weather</Card.Title>
+                  <Card.Body>
+                     An animated and responsive weather dashboard. With plenty of information and a modern design with
+                     light and dark themes. The site is animated for an improved user experience. Created with Next.js,
+                     React, TailwindCSS, Framer Motion, and the Open Weather Map API.
+                  </Card.Body>
+                  <Button onClick={() => setShowCard5(!showCard5)}>Show {showCard5 ? 'less' : 'more'}</Button>
+                  <Card.Light show={showCard5}>
+                     <Card.Title>Technologies used</Card.Title>
+                     <List>
+                        <li>Typescript</li>
+                        <li>React</li>
+                        <li>Next.js</li>
+                        <li>Framer Motion</li>
+                        <li>TailwindCSS</li>
+                        <li>Open Weather API</li>
+                     </List>
+                  </Card.Light>
+                  <Card.Footer>
+                     <Link href='https://github.com/mythosmystery/next-gen-weather'>Source Code</Link>
+                     <Link href='https://mythosmystery.github.io/next-gen-weather'>Deployment</Link>
+                  </Card.Footer>
+               </ImageCard>
+            </div>
+            <div className='mx-6 lg:ml-3 lg:mr-6'>
+               <ImageCard image={markdown}>
+                  <Card.Title>Markdown It!</Card.Title>
+                  <Card.Body>
+                     A responsive and beautiful markdown preview app. Write your markdown on the left and see it
+                     rendered with full syntax highlighting on the right. Created with React, Next.js, Framer Motion,
+                     TailwindCSS, and Marked.
+                  </Card.Body>
+                  <Button onClick={() => setShowCard4(!showCard4)}>Show {showCard4 ? 'less' : 'more'}</Button>
+                  <Card.Light show={showCard4}>
+                     <Card.Title>Technologies used</Card.Title>
+                     <List>
+                        <li>Typescript</li>
+                        <li>React</li>
+                        <li>Next.js</li>
+                        <li>Framer Motion</li>
+                        <li>TailwindCSS</li>
+                        <li>Marked.js</li>
+                     </List>
+                  </Card.Light>
+                  <Card.Footer>
+                     <Link href='https://github.com/mythosmystery/markdown-it'>Source Code</Link>
+                     <Link href='https://mythosmystery.github.io/markdown-it'>Deployment</Link>
+                  </Card.Footer>
+               </ImageCard>
+            </div>
+         </div>
+
+         <div className='flex flex-col lg:flex-row'>
+            <div className='mx-6 lg:ml-6 lg:mr-3'>
                <ImageCard image={bugTracker}>
                   <Card.Title>Simple Bug Tracking Tool</Card.Title>
                   <Card.Body>
@@ -151,33 +209,6 @@ const Home: FC = () => {
                   </Card.Footer>
                </ImageCard>
             </div>
-         </div>
-
-         <div className='lg:w-3/6 lg:mx-auto mx-6'>
-            <ImageCard image={markdown}>
-               <Card.Title>Markdown It!</Card.Title>
-               <Card.Body>
-                  A responsive and beautiful markdown preview app. Write your markdown on the left and see it rendered
-                  with full syntax highlighting on the right. Created with React, Next.js, Framer Motion, TailwindCSS,
-                  and Marked.
-               </Card.Body>
-               <Button onClick={() => setShowCard(!showCard)}>Show {showCard ? 'less' : 'more'}</Button>
-               <Card.Light show={showCard}>
-                  <Card.Title>Technologies used</Card.Title>
-                  <List>
-                     <li>Typescript</li>
-                     <li>React</li>
-                     <li>Next.js</li>
-                     <li>Framer Motion</li>
-                     <li>TailwindCSS</li>
-                     <li>Marked.js</li>
-                  </List>
-               </Card.Light>
-               <Card.Footer>
-                  <Link href='https://github.com/mythosmystery/markdown-it'>Source Code</Link>
-                  <Link href='https://mythosmystery.github.io/markdown-it'>Deployment</Link>
-               </Card.Footer>
-            </ImageCard>
          </div>
 
          <Footer>2021 Hunter Barton</Footer>

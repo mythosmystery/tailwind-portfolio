@@ -31,9 +31,10 @@ interface FooterProps {
 const Footer: FC<FooterProps> = ({ children }) => {
    return (
       <div className='flex flex-row mt-2'>
-         {children.map(child => {
+         {children.map((child, i) => {
             return (
                <div
+                  key={i}
                   className={
                      'border-t border-gray-700 w-2/4 text-center text-yellow-600 text-lg pb-3 pt-6 hover:text-indigo-900 hover:bg-gray-900 hover:cursor-pointer '
                   }>
