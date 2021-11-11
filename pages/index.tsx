@@ -12,7 +12,6 @@ import Card from '../components/Card';
 import ImageCard from '../components/ImageCard';
 import ProfileImage from '../components/ProfileImage';
 import Navbar from '../components/Navbar';
-import SkillsCard from '../components/SkillsCard';
 import Footer from '../components/Footer';
 import Button from '../components/Button';
 import Header from '../components/Header';
@@ -20,6 +19,7 @@ import List from '../components/List';
 
 import { FaHome } from 'react-icons/fa';
 import { FC, useState } from 'react';
+import { IconSkills } from '../components/IconSkills';
 
 const Home: FC = () => {
    const [showCard, setShowCard] = useState(false);
@@ -60,9 +60,9 @@ const Home: FC = () => {
             </Card>
          </div>
 
-         <Header id='skills'>Skills</Header>
+         <Header id='skills'>My Skills</Header>
 
-         <SkillsCard />
+         <IconSkills />
 
          <Header id='projects'>Projects</Header>
 
