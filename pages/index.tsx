@@ -1,5 +1,5 @@
 //images
-import devCrowd from '../images/devcrowd.png';
+import devCrowd from '../images/devCrowd.png';
 import me from '../images/me.jpg';
 import bugTracker from '../images/bug-tracker.png';
 import notes from '../images/notes.png';
