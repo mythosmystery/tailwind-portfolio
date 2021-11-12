@@ -130,35 +130,6 @@ const Home: FC = () => {
                </ImageCard>
             </div>
             <div className='mx-6 lg:ml-3 lg:mr-6 lg:w-1/2'>
-               <ImageCard image={markdown}>
-                  <Card.Title>Markdown It!</Card.Title>
-                  <Card.Body>
-                     A responsive and beautiful markdown preview app. Write your markdown on the left and see it
-                     rendered with full syntax highlighting on the right. Created with React, Next.js, Framer Motion,
-                     TailwindCSS, and Marked.
-                  </Card.Body>
-                  <Button onClick={() => setShowCard4(!showCard4)}>Show {showCard4 ? 'less' : 'more'}</Button>
-                  <Card.Light show={showCard4}>
-                     <Card.Title>Technologies used</Card.Title>
-                     <List>
-                        <li>Typescript</li>
-                        <li>React</li>
-                        <li>Next.js</li>
-                        <li>Framer Motion</li>
-                        <li>TailwindCSS</li>
-                        <li>Marked.js</li>
-                     </List>
-                  </Card.Light>
-                  <Card.Footer>
-                     <Link href='https://github.com/mythosmystery/markdown-it'>Source Code</Link>
-                     <Link href='https://mythosmystery.github.io/markdown-it'>Deployment</Link>
-                  </Card.Footer>
-               </ImageCard>
-            </div>
-         </div>
-
-         <div className='flex flex-col lg:flex-row'>
-            <div className='mx-6 lg:ml-6 lg:mr-3 lg:w-1/2'>
                <ImageCard image={bugTracker}>
                   <Card.Title>Simple Bug Tracking Tool</Card.Title>
                   <Card.Body>
@@ -182,6 +153,35 @@ const Home: FC = () => {
                   <Card.Footer>
                      <Link href='https://github.com/mythosmystery/bug-tracker'>Source Code</Link>
                      <Link href='https://hb-bug-tracker.herokuapp.com/'>Deployment</Link>
+                  </Card.Footer>
+               </ImageCard>
+            </div>
+         </div>
+
+         <div className='flex flex-col lg:flex-row'>
+            <div className='mx-6 lg:ml-6 lg:mr-3 lg:w-1/2'>
+               <ImageCard image={markdown}>
+                  <Card.Title>Markdown It!</Card.Title>
+                  <Card.Body>
+                     A responsive and beautiful markdown preview app. Write your markdown on the left and see it
+                     rendered with full syntax highlighting on the right. Created with React, Next.js, Framer Motion,
+                     TailwindCSS, and Marked.
+                  </Card.Body>
+                  <Button onClick={() => setShowCard4(!showCard4)}>Show {showCard4 ? 'less' : 'more'}</Button>
+                  <Card.Light show={showCard4}>
+                     <Card.Title>Technologies used</Card.Title>
+                     <List>
+                        <li>Typescript</li>
+                        <li>React</li>
+                        <li>Next.js</li>
+                        <li>Framer Motion</li>
+                        <li>TailwindCSS</li>
+                        <li>Marked.js</li>
+                     </List>
+                  </Card.Light>
+                  <Card.Footer>
+                     <Link href='https://github.com/mythosmystery/markdown-it'>Source Code</Link>
+                     <Link href='https://mythosmystery.github.io/markdown-it'>Deployment</Link>
                   </Card.Footer>
                </ImageCard>
             </div>
