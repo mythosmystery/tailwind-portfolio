@@ -134,7 +134,8 @@ const Home: FC = () => {
                   <Card.Title>Simple Bug Tracking Tool</Card.Title>
                   <Card.Body>
                      A full-stack, bug tracking app. Report and manage bugs easily with an intuitive user interface.
-                     Created with React, GraphQL, MongoDB, and Node.
+                     Search for a piece of software and see all reported bugs for it. Created with React, GraphQL,
+                     MongoDB, and Node.
                   </Card.Body>
                   <h1 className='dark:text-gray-600 ml-3 mb-1.5 mt-3'>Example User: test@test.net | password</h1>
 
