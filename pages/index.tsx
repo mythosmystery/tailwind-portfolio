@@ -74,10 +74,10 @@ const Home: FC = () => {
                   user. Access all your notes from anywhere. Built using Typescript, React, Next.js, TailwindCSS,
                   GraphQL, TypeORM, TypeGraphql, Express, Apollo Server, URQL, and Redis. It stores each user session in
                   a Redis database, and stores all notes and user information in a PostgreSQL database using TypeORM for
-                  modelling and interacting with the data. It uses TypeGraphql on the backend and URQL on the frontend
-                  to pass Graphql data between client and server. This data is responsively rendered and manipulated
-                  using React and Next.js. This is styled by Tailwind CSS.
+                  modelling and interacting with the data. It uses TypeGraphql and URQL to pass Graphql data between
+                  client and server. This data is responsively rendered and manipulated using React and Next.js.
                </Card.Body>
+               <h1 className='dark:text-gray-600 ml-3 mb-1.5 mt-3'>Example User: admin@typenotes.net | password</h1>
                <Button onClick={() => setShowCard3(!showCard3)}>Show {showCard3 ? 'less' : 'more'}</Button>
                <Card.Light show={showCard3}>
                   <Card.Title>Technologies used</Card.Title>
@@ -165,6 +165,8 @@ const Home: FC = () => {
                      A full-stack, bug tracking app. Report and manage bugs easily with an intuitive user interface.
                      Created with React, GraphQL, MongoDB, and Node.
                   </Card.Body>
+                  <h1 className='dark:text-gray-600 ml-3 mb-1.5 mt-3'>Example User: test@test.net | password</h1>
+
                   <Button onClick={() => setShowCard2(!showCard2)}>Show {showCard2 ? 'less' : 'more'}</Button>
                   <Card.Light show={showCard2}>
                      <Card.Title>Technologies used</Card.Title>
@@ -191,6 +193,7 @@ const Home: FC = () => {
                      the backend this site uses Express, MongoDB, and GraphQL. A responsive and user-friendly UI
                      experience is paired with a fully featured backend for future features.
                   </Card.Body>
+                  <h1 className='dark:text-gray-600 ml-3 mb-1.5 mt-3'>Example User: test@test.net | password</h1>
                   <Button onClick={() => setShowCard(!showCard)}>Show {showCard ? 'less' : 'more'}</Button>
                   <Card.Light show={showCard}>
                      <Card.Title>Technologies used</Card.Title>
