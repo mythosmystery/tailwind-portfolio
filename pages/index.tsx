@@ -165,8 +165,8 @@ const Home: FC = () => {
                   <Card.Title>Markdown It!</Card.Title>
                   <Card.Body>
                      A responsive and beautiful markdown preview app. Write your markdown on the left and see it
-                     rendered with full syntax highlighting on the right. Created with React, Next.js, Framer Motion,
-                     TailwindCSS, and Marked.
+                     rendered with full syntax highlighting on the right. Also supports saving markdown to local storage
+                     for access across sessions Created with React, Next.js, Framer Motion, TailwindCSS, and Marked.
                   </Card.Body>
                   <Button onClick={() => setShowCard4(!showCard4)}>Show {showCard4 ? 'less' : 'more'}</Button>
                   <Card.Light show={showCard4}>
