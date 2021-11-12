@@ -1,40 +1,39 @@
-import { FC, HTMLAttributes, ReactNode } from 'react';
+import { FC, useEffect, useRef } from 'react';
 import { FaBars } from 'react-icons/fa';
+import { HTMLMotionProps, motion } from 'framer-motion';
 
 interface MenuProps {
-   children: Array<ReactNode>;
    showMenu: boolean;
+   handleClose: () => void;
 }
 
-const Menu: FC<MenuProps> = ({ children, showMenu }) => {
+const Menu: FC<MenuProps> = ({ children, showMenu, handleClose }) => {
+   const menuRef = useRef(null as any);
+   useEffect(() => {
+      menuRef?.current.focus();
+   }, [showMenu]);
    return (
-      <div className="top-0 left-0 mt-20 ml-3 fixed z-50">
-         <div className={showMenu ? '' : 'hidden'}>
-            {children?.map((child, i) => {
-               return <Item key={i}>{child}</Item>;
-            })}
-         </div>
-      </div>
-   );
-};
-const Item: FC = ({ children }) => {
-   return (
-      <div className="text-green-300 z-50 bg-gray-800 p-3 justify-center mb-2 rounded-md shadow-md hover:rounded-xl hover:text-gray-300 hover:bg-gray-700 active:bg-green-400 active:text-gray-800 flex">
-         {children}
+      <div
+         className='top-0 left-0 mt-20 ml-3 fixed z-50 focus:outline-none'
+         onBlur={handleClose}
+         tabIndex={-1}
+         ref={menuRef}>
+         <div className={showMenu ? '' : 'hidden'}>{children}</div>
       </div>
    );
 };
 
-const Button: FC<HTMLAttributes<HTMLDivElement>> = props => {
+const Button: FC<HTMLMotionProps<'div'>> = props => {
    return (
       <>
-         <div
-            className="fixed sm:hidden m-2 p-4 top-0 left-0 transform text-gray-900 z-40 bg-green-400 active:bg-green-900 active:text-gray-400 active:rotate-90 transition-all duration-100 ease-out  rounded-full shadow-lg active:shadow-sm"
-            {...props}
-         >
-            <FaBars size="24" />
-         </div>
+         <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 1.3, rotate: 90, translateY: 5 }}
+            className='fixed sm:hidden m-2 p-4 top-0 left-0 transform text-gray-900 z-40 bg-green-400 rounded-full shadow-md active:shadow-sm'
+            {...props}>
+            <FaBars size='24' />
+         </motion.div>
       </>
    );
 };
-export default Object.assign(Menu, { Item, Button });
+export default Object.assign(Menu, { Button });

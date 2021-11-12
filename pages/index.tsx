@@ -66,7 +66,7 @@ const Home: FC = () => {
 
          <Header id='projects'>Projects</Header>
 
-         <div className='lg:w-3/6 lg:mx-auto mx-6'>
+         <div className='lg:w-4/6 lg:mx-auto mx-6'>
             <ImageCard image={notes}>
                <Card.Title>TypeNotes</Card.Title>
                <Card.Body>
@@ -103,7 +103,7 @@ const Home: FC = () => {
          </div>
 
          <div className='flex flex-col lg:flex-row'>
-            <div className='mx-6 lg:ml-6 lg:mr-3'>
+            <div className='mx-6 lg:ml-6 lg:mr-3 lg:w-1/2'>
                <ImageCard image={weather}>
                   <Card.Title>Next Gen Weather</Card.Title>
                   <Card.Body>
@@ -129,7 +129,7 @@ const Home: FC = () => {
                   </Card.Footer>
                </ImageCard>
             </div>
-            <div className='mx-6 lg:ml-3 lg:mr-6'>
+            <div className='mx-6 lg:ml-3 lg:mr-6 lg:w-1/2'>
                <ImageCard image={markdown}>
                   <Card.Title>Markdown It!</Card.Title>
                   <Card.Body>
@@ -158,7 +158,7 @@ const Home: FC = () => {
          </div>
 
          <div className='flex flex-col lg:flex-row'>
-            <div className='mx-6 lg:ml-6 lg:mr-3'>
+            <div className='mx-6 lg:ml-6 lg:mr-3 lg:w-1/2'>
                <ImageCard image={bugTracker}>
                   <Card.Title>Simple Bug Tracking Tool</Card.Title>
                   <Card.Body>
@@ -183,7 +183,7 @@ const Home: FC = () => {
                   </Card.Footer>
                </ImageCard>
             </div>
-            <div className='mx-6 lg:ml-3 lg:mr-6'>
+            <div className='mx-6 lg:ml-3 lg:mr-6 lg:w-1/2'>
                <ImageCard image={devCrowd}>
                   <Card.Title>Dev Crowd</Card.Title>
                   <Card.Body>
