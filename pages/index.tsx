@@ -20,6 +20,13 @@ import List from '../components/List';
 import { FaHome } from 'react-icons/fa';
 import { FC, useState } from 'react';
 import { IconSkills } from '../components/IconSkills';
+import { motion } from 'framer-motion';
+
+const variants = {
+   hidden: { x: 500 },
+   enter: { x: 0 },
+   exit: { x: -500 }
+};
 
 const Home: FC = () => {
    const [showCard, setShowCard] = useState(false);
@@ -28,7 +35,13 @@ const Home: FC = () => {
    const [showCard4, setShowCard4] = useState(false);
    const [showCard5, setShowCard5] = useState(false);
    return (
-      <body className='bg-gray-900 min-w-screen min-h-screen font-mono'>
+      <motion.main
+         variants={variants}
+         initial='hidden'
+         animate='enter'
+         exit='exit'
+         className='bg-gray-900 min-w-screen min-h-screen font-mono'
+      >
          <Head>
             <title>Hunter Barton Portfolio</title>
             <link rel='icon' href='/favicon.ico' />
@@ -56,7 +69,8 @@ const Home: FC = () => {
                coding bootcamp with straight A's. I was the lead programmer on our final project, which was a social
                media app. Prior to attending the GA Tech bootcamp I managed Google ads and a Squarespace website for my
                employer. At that job I also troubleshot and repaired electronic equipment, this gave me a strong
-               background for logically debugging systems.
+               background for logically debugging systems. I have also earned a certification for Data Structures and
+               Algorithms in Javascript.
             </Card>
          </div>
 
@@ -216,7 +230,7 @@ const Home: FC = () => {
          </div>
 
          <Footer>2021 Hunter Barton</Footer>
-      </body>
+      </motion.main>
    );
 };
 export default Home;

@@ -2,10 +2,24 @@ import { FaHome } from 'react-icons/fa';
 import Head from 'next/head';
 import Navbar from '../components/Navbar';
 import { FC } from 'react';
+import { motion } from 'framer-motion';
+import Footer from '../components/Footer';
+
+const variants = {
+   hidden: { x: 500 },
+   enter: { x: 0 },
+   exit: { x: -500 }
+};
 
 const Resume: FC = () => {
    return (
-      <body className='bg-gray-900 min-w-screen min-h-screen'>
+      <motion.main
+         variants={variants}
+         initial='hidden'
+         animate='enter'
+         exit='exit'
+         className='bg-gray-900 min-w-screen min-h-screen'
+      >
          <Head>
             <title>Hunter Barton Resume</title>
             <link rel='icon' href='/favicon.ico' />
@@ -149,7 +163,9 @@ const Resume: FC = () => {
                </li>
             </ul>
          </div>
-      </body>
+
+         <Footer>2021 Hunter Barton</Footer>
+      </motion.main>
    );
 };
 export default Resume;
