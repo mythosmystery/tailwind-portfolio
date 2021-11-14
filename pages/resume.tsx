@@ -62,7 +62,7 @@ const Resume: FC = () => {
                Full-stack web developer utilizing an electronics repair background to solve problems logically and
                precisely. Able to creatively and efficiently invent solutions. Detail-oriented and quick at learning new
                skills. Well versed in Javascript, Typescript, HTML, CSS, and Java. Earned a certificate in full-stack
-               web development from Georgia Tech.
+               web development from Georgia Tech and a Data Structures and Algorithms certificate from FreeCodeCamp
             </p>
             <h3 className='text-center font-bold mt-6'>Technical Skills</h3>
             <p className='text-sm mt-0.5'>
