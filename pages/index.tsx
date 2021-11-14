@@ -40,7 +40,7 @@ const Home: FC = () => {
          initial='hidden'
          animate='enter'
          exit='exit'
-         className='bg-gray-900 min-w-screen min-h-screen top-0 font-mono'
+         className='bg-gray-900 w-screen h-screen fixed top-0 font-mono overflow-y-scroll'
       >
          <Head>
             <title>Hunter Barton Portfolio</title>
