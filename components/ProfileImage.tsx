@@ -6,8 +6,8 @@ interface Props {
 }
 const ProfileImage: FC<Props> = ({ image }) => {
    return (
-      <div className=" flex m-6 h-1/4">
-         <Image src={image} className="rounded-full drop-shadow-lg" />
+      <div className=' flex m-6 h-1/4'>
+         <Image src={image} alt='photo of the author' className='rounded-full drop-shadow-lg' />
       </div>
    );
 };

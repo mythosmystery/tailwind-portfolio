@@ -40,9 +40,9 @@ const Navbar: FC<NavbarProps> = ({ children, title }) => {
 };
 const Panel: FC = ({ children }) => {
    return (
-      <div className='flex-row hidden sm:flex sticky z-20 bg-gray-900 top-0 left-0 w-min-screen h-16 justify-end px-2 drop-shadow-lg'>
+      <nav className='flex-row hidden sm:flex sticky z-20 bg-gray-900 top-0 left-0 w-min-screen h-16 justify-end px-2 drop-shadow-lg'>
          {children}
-      </div>
+      </nav>
    );
 };
 
@@ -59,7 +59,8 @@ const Item: FC<ItemProps> = ({ children, onClick, href }) => {
             whileHover={{ scale: 1.1 }}
             animate={{ rotate: 0, scale: 1 }}
             onClick={onClick}
-            className='relative flex bg-gray-800 text-green-400 justify-center items-center my-2 mx-1 p-3 rounded-md shadow-md cursor-pointer hover:text-gray-600 hover:bg-green-500 active:bg-blue-400'>
+            className='relative flex bg-gray-800 text-green-400 justify-center items-center my-2 mx-1 p-3 rounded-md shadow-md cursor-pointer hover:text-gray-600 hover:bg-green-500 active:bg-blue-400'
+         >
             {children}
          </motion.div>
       </Link>

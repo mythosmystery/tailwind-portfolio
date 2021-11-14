@@ -29,7 +29,7 @@ interface IconSkillsProps {}
 
 export const IconSkills: React.FC<IconSkillsProps> = ({}) => {
    return (
-      <div className='text-center'>
+      <section className='text-center'>
          <h1 className='text-2xl font-thin text-gray-400 pb-2 mt-6'>Languages</h1>
          <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-y-8 grid-flow-row w-full text-gray-600 py-6 px-4 my-6'>
             <IconContainer title='Typescript'>
@@ -109,6 +109,6 @@ export const IconSkills: React.FC<IconSkillsProps> = ({}) => {
                <SiHeroku size='64' className='text-purple-700' />
             </IconContainer>
          </div>
-      </div>
+      </section>
    );
 };

@@ -58,21 +58,23 @@ const Home: FC = () => {
 
          <Header id='about'>About Me</Header>
 
-         <div className='flex flex-col sm:flex-row bg-gray-600 mx-6 p-2 my-6 md:my-8 md:mx-12 rounded-lg drop-shadow-lg font-sans'>
+         <article className='flex flex-col sm:flex-row bg-gray-600 mx-6 p-2 my-6 md:my-8 md:mx-12 rounded-lg drop-shadow-lg font-sans'>
             <ProfileImage image={me} />
             <Card>
-               My name is Hunter Barton and I am a 23 year old software developer, photographer and musician. I have
-               been programming for about 5 years, but I have had an interest since a young age because of my Dad who is
-               also a programmer. I started with Java and have since learned Javascript, Typescript, and I am learning
-               C# currently. My passion for programming and computers has always drawn me to the industry. I have taken
-               programming classes at Pima Community College in Tucson, AZ. I completed the Georgia Tech full-stack
-               coding bootcamp with straight A's. I was the lead programmer on our final project, which was a social
-               media app. Prior to attending the GA Tech bootcamp I managed Google ads and a Squarespace website for my
-               employer. At that job I also troubleshot and repaired electronic equipment, this gave me a strong
-               background for logically debugging systems. I have also earned a certification for Data Structures and
-               Algorithms in Javascript.
+               <p>
+                  My name is Hunter Barton and I am a 23 year old software developer, photographer and musician. I have
+                  been programming for about 5 years, but I have had an interest since a young age because of my Dad who
+                  is also a programmer. I started with Java and have since learned Javascript, Typescript, and I am
+                  learning C# currently. My passion for programming and computers has always drawn me to the industry. I
+                  have taken programming classes at Pima Community College in Tucson, AZ. I completed the Georgia Tech
+                  full-stack coding bootcamp with straight A's. I was the lead programmer on our final project, which
+                  was a social media app. Prior to attending the GA Tech bootcamp I managed Google ads and a Squarespace
+                  website for my employer. At that job I also troubleshot and repaired electronic equipment, this gave
+                  me a strong background for logically debugging systems. I have also earned a certification for Data
+                  Structures and Algorithms in Javascript.
+               </p>
             </Card>
-         </div>
+         </article>
 
          <Header id='skills'>My Skills</Header>
 
@@ -80,7 +82,7 @@ const Home: FC = () => {
 
          <Header id='projects'>Projects</Header>
 
-         <div className='lg:w-4/6 lg:mx-auto mx-6'>
+         <article className='lg:w-4/6 lg:mx-auto mx-6'>
             <ImageCard image={notes}>
                <Card.Title>TypeNotes</Card.Title>
                <Card.Body>
@@ -114,10 +116,10 @@ const Home: FC = () => {
                   <Link href='https://mythosmystery.github.io/notes-web-frontend'>Deployment</Link>
                </Card.Footer>
             </ImageCard>
-         </div>
+         </article>
 
-         <div className='flex flex-col lg:flex-row'>
-            <div className='mx-6 lg:ml-6 lg:mr-3 lg:w-1/2'>
+         <section className='flex flex-col lg:flex-row'>
+            <article className='mx-6 lg:ml-6 lg:mr-3 lg:w-1/2'>
                <ImageCard image={weather}>
                   <Card.Title>Next Gen Weather</Card.Title>
                   <Card.Body>
@@ -142,8 +144,8 @@ const Home: FC = () => {
                      <Link href='https://mythosmystery.github.io/next-gen-weather'>Deployment</Link>
                   </Card.Footer>
                </ImageCard>
-            </div>
-            <div className='mx-6 lg:ml-3 lg:mr-6 lg:w-1/2'>
+            </article>
+            <article className='mx-6 lg:ml-3 lg:mr-6 lg:w-1/2'>
                <ImageCard image={bugTracker}>
                   <Card.Title>Simple Bug Tracking Tool</Card.Title>
                   <Card.Body>
@@ -170,11 +172,11 @@ const Home: FC = () => {
                      <Link href='https://hb-bug-tracker.herokuapp.com/'>Deployment</Link>
                   </Card.Footer>
                </ImageCard>
-            </div>
-         </div>
+            </article>
+         </section>
 
-         <div className='flex flex-col lg:flex-row'>
-            <div className='mx-6 lg:ml-6 lg:mr-3 lg:w-1/2'>
+         <section className='flex flex-col lg:flex-row'>
+            <article className='mx-6 lg:ml-6 lg:mr-3 lg:w-1/2'>
                <ImageCard image={markdown}>
                   <Card.Title>Markdown It!</Card.Title>
                   <Card.Body>
@@ -199,8 +201,8 @@ const Home: FC = () => {
                      <Link href='https://mythosmystery.github.io/markdown-it'>Deployment</Link>
                   </Card.Footer>
                </ImageCard>
-            </div>
-            <div className='mx-6 lg:ml-3 lg:mr-6 lg:w-1/2'>
+            </article>
+            <article className='mx-6 lg:ml-3 lg:mr-6 lg:w-1/2'>
                <ImageCard image={devCrowd}>
                   <Card.Title>Dev Crowd</Card.Title>
                   <Card.Body>
@@ -226,8 +228,8 @@ const Home: FC = () => {
                      <Link href='https://hb-dev-crowd.herokuapp.com/'>Deployment</Link>
                   </Card.Footer>
                </ImageCard>
-            </div>
-         </div>
+            </article>
+         </section>
 
          <Footer>2021 Hunter Barton</Footer>
       </motion.main>
