@@ -4,7 +4,7 @@ import me from '../images/me.jpg';
 import bugTracker from '../images/bug-tracker.png';
 import notes from '../images/notes.png';
 import markdown from '../images/markdown.png';
-import weather from '../images/weather-light.png';
+import weather from '../images/weather.png';
 //components
 import Head from 'next/head';
 import Link from 'next/link';
