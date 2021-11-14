@@ -223,7 +223,7 @@ const Home: FC = () => {
                   </Card.Light>
                   <Card.Footer>
                      <Link href='https://github.com/mythosmystery/dev-crowd'>Source Code</Link>
-                     <Link href='https://dev-crowd.herokuapp.com/'>Deployment</Link>
+                     <Link href='https://hb-dev-crowd.herokuapp.com/'>Deployment</Link>
                   </Card.Footer>
                </ImageCard>
             </div>
