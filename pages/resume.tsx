@@ -73,8 +73,8 @@ const Resume: FC = () => {
                Photoshop
             </p>
             <p className='text-sm mt-0.5 border-b border-gray-300 pb-6'>
-               <span className='font-bold'>Tools:</span> React, Express, GraphQL, Node, Next.js, TailwindCSS, TypeORM,
-               URQL, Mongoose
+               <span className='font-bold'>Tools:</span> React, React-Native, Next.js, Node, Express, GraphQL,
+               TypeGraphQL, TypeORM, Sequelize, Mongoose, Apollo, URQL, Svelte, jQuery, Bootstrap, TailwindCSS
             </p>
             <h3 className='text-center font-bold mt-6 mb-1'>Projects</h3>
             <b className='text-sm'>

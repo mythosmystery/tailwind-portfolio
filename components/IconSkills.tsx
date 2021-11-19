@@ -19,6 +19,7 @@ import {
    SiNodedotjs,
    SiPostgresql,
    SiReact,
+   SiSvelte,
    SiTailwindcss,
    SiTypescript,
    SiVisualstudiocode
@@ -73,7 +74,10 @@ export const IconSkills: React.FC<IconSkillsProps> = ({}) => {
                <SiDocker size='64' className='text-blue-700' />
             </IconContainer>
          </div>
-         <div className='grid grid-cols-2  gap-y-8 sm:grid-cols-4 grid-flow-row place-items-center text-white px-4 pb-10'>
+         <div className='grid grid-cols-2  gap-y-8 sm:grid-cols-5 grid-flow-row place-items-center text-white px-4 pb-10'>
+            <IconContainer title='Svelte'>
+               <SiSvelte size='64' className='text-yellow-700' />
+            </IconContainer>
             <IconContainer title='Node.js'>
                <SiNodedotjs size='64' className='text-green-700' />
             </IconContainer>
