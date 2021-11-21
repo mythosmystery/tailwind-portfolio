@@ -2,8 +2,8 @@ const isProd = process.env.NODE_ENV === 'production';
 module.exports = {
    images: {
       loader: 'imgix',
-      path: 'https://mythosmystery.github.io'
+      path: 'https://mythosmystery.github.io/tailwind-portfolio'
    },
-   basePath: '/tailwind-portfolio',
-   assetPrefix: '/tailwind-portfolio'
+   assetPrefix: '/tailwind-portfolio',
+   basePath: '/tailwind-portfolio'
 };
