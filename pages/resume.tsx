@@ -103,15 +103,15 @@ const Resume: FC = () => {
                   github.com/mythosmystery/notes-backend
                </a>{' '}
                |{' '}
-               <a className='text-blue-800' href='https://mythosmystery.github.io/notes-web-frontend'>
-                  mythosmystery.github.io/notes-web-frontend
+               <a className='text-blue-800' href='https://typenotes.ga'>
+                  typenotes.ga
                </a>
             </b>
             <ul className='list-disc list-inside text-sm px-6 mb-2'>
-               <li>Summary: Full-stack note taking app built in Typescript</li>
+               <li>Summary: Full-stack note taking app built in Typescript. Works natively as a PWA</li>
                <li>Features: User Authentication, Custom UI, End-to-end typings</li>
                <li>Role: Sole Developer</li>
-               <li>Tools: React, Next.js, GraphQL, PostgreSQL, TypeORM, TailwindCSS, Redis, URQL</li>
+               <li>Tools: React, Next.js, GraphQL, PostgreSQL, TypeORM, TailwindCSS, Redis, URQL, AWS</li>
             </ul>
             <b className='text-sm mt-2'>
                Tailwind Portfolio |{' '}
@@ -124,7 +124,7 @@ const Resume: FC = () => {
                <li>Summary: A responsive and beautiful personal portfolio. Built using Next.js static generation</li>
                <li>Features: Custom interface design, responsive navigation bar, lively animations</li>
                <li>Role: Sole Developer</li>
-               <li>Tools: React, Next.JS, Tailwind CSS, Framer Motion, Github Actions</li>
+               <li>Tools: React, Next.JS, Tailwind CSS, Framer Motion, AWS</li>
             </ul>
             <h2 className='text-center text-xl mt-6 mb-4 font-bold'>Experience</h2>
             <p className='font-bold'>

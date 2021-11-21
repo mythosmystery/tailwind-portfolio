@@ -113,7 +113,7 @@ const Home: FC = () => {
                <Card.Footer>
                   <Link href='https://github.com/mythosmystery/notes-web-frontend'>Client Source</Link>
                   <Link href='https://github.com/mythosmystery/notes-backend'>Server Source</Link>
-                  <Link href='https://mythosmystery.github.io/notes-web-frontend'>Deployment</Link>
+                  <Link href='https://typenotes.ga'>Deployment</Link>
                </Card.Footer>
             </ImageCard>
          </article>
@@ -141,7 +141,7 @@ const Home: FC = () => {
                   </Card.Light>
                   <Card.Footer>
                      <Link href='https://github.com/mythosmystery/next-gen-weather'>Source Code</Link>
-                     <Link href='https://mythosmystery.github.io/next-gen-weather'>Deployment</Link>
+                     <Link href='https://next-gen-weather.ga'>Deployment</Link>
                   </Card.Footer>
                </ImageCard>
             </article>
@@ -198,7 +198,7 @@ const Home: FC = () => {
                   </Card.Light>
                   <Card.Footer>
                      <Link href='https://github.com/mythosmystery/markdown-it'>Source Code</Link>
-                     <Link href='https://mythosmystery.github.io/markdown-it'>Deployment</Link>
+                     <Link href='https://markdownit.ga'>Deployment</Link>
                   </Card.Footer>
                </ImageCard>
             </article>
