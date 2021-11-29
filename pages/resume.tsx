@@ -114,17 +114,20 @@ const Resume: FC = () => {
                <li>Tools: React, Next.js, GraphQL, PostgreSQL, TypeORM, TailwindCSS, Redis, URQL, AWS</li>
             </ul>
             <b className='text-sm mt-2'>
-               Tailwind Portfolio |{' '}
-               <a className='text-blue-800 mt-2' href='https://github.com/mythosmystery/tailwind-portfolio'>
-                  github.com/mythosmystery/tailwind-portfolio
+               Friendlie |{' '}
+               <a className='text-blue-800 mt-2' href='https://github.com/mythosmystery/friendlie'>
+                  github.com/mythosmystery/friendlie
                </a>{' '}
                |
             </b>
             <ul className='list-disc list-inside text-sm pl-6 border-b border-gray-300 pb-6'>
-               <li>Summary: A responsive and beautiful personal portfolio. Built using Next.js static generation</li>
-               <li>Features: Custom interface design, responsive navigation bar, lively animations</li>
+               <li>
+                  Summary: A place for making friends. Built to scale with Typescript, PostgreSQL, TypeORM, TypeGraphQL,
+                  Next.js, Apollo, OAuth, TailwindCSS, JWT
+               </li>
+               <li>Features: Secure social sign-in, Scalable back-end, Responsive PWA UI</li>
                <li>Role: Sole Developer</li>
-               <li>Tools: React, Next.JS, Tailwind CSS, Framer Motion, AWS</li>
+               <li>Tools: Typescript, React, Next.js, PostgreSQL, TypeORM, TypegraphQL, Apollo, TailwindCSS</li>
             </ul>
             <h2 className='text-center text-xl mt-6 mb-4 font-bold'>Experience</h2>
             <p className='font-bold'>
