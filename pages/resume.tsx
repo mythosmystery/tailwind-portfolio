@@ -120,7 +120,7 @@ const Resume: FC = () => {
                </a>{' '}
                |
             </b>
-            <ul className='list-disc list-inside text-sm pl-6 border-b border-gray-300 pb-6'>
+            <ul className='list-disc list-inside text-sm pl-6 pb-2'>
                <li>
                   Summary: A place for making friends. Built to scale with Typescript, PostgreSQL, TypeORM, TypeGraphQL,
                   Next.js, Apollo, OAuth, TailwindCSS, JWT
@@ -129,14 +129,36 @@ const Resume: FC = () => {
                <li>Role: Sole Developer</li>
                <li>Tools: Typescript, React, Next.js, PostgreSQL, TypeORM, TypegraphQL, Apollo, TailwindCSS</li>
             </ul>
+
+            <b className='text-sm mt-2'>Fidelity | </b>
+            <ul className='list-disc list-inside text-sm pl-6 border-b border-gray-300 pb-6'>
+               <li>Summary: An easy to use interface to manage customer data and repair/sales order data</li>
+               <li>
+                  Features: Admin interface for technicians with full management of customers and active repairs Coming
+                  soon: Interface for customers to track repairs
+               </li>
+               <li>Role: Sole Developer</li>
+               <li>Tools: Typescript, React, Remix.run, PostgreSQL, Prisma, Tailwind CSS, AWS</li>
+            </ul>
+
             <h2 className='text-center text-xl mt-6 mb-4 font-bold'>Experience</h2>
             <p className='font-bold'>
-               September 2019 - June 2020<span className='mx-16'>Hifi Workshop</span>
+               August 2021 - Now<span className='mx-16 text-blue-500'>Hifi Workshop</span>
+               <span>Tucson, Arizona (remote)</span>
+            </p>
+            <p className='font-bold text-sm ml-6 my-1'>Contract Web Developer</p>
+            <ul className='list-disc list-inside text-sm pl-6 mb-8'>
+               <li>Developing a web app for managing repair orders and sales</li>
+               <li>Designed to improve efficiency and collect better customer data and metrics</li>
+               <li>Built to be very extensible with a scalable codebase</li>
+            </ul>
+
+            <p className='font-bold'>
+               September 2019 - June 2020<span className='mx-16 text-blue-500'>Hifi Workshop</span>
                <span>Tucson, Arizona</span>
             </p>
             <p className='font-bold text-sm ml-6 my-1'>Electronics Repair Technician</p>
             <ul className='list-disc list-inside text-sm pl-6 mb-8'>
-               <li>Created a webapp for managing repair orders, optimizing the repair process.</li>
                <li>Developed an online presence and boosted SEO for more customer visibility.</li>
                <li>Worked with customers to find the best solution for their needs.</li>
                <li>
@@ -144,8 +166,9 @@ const Resume: FC = () => {
                   experience
                </li>
             </ul>
+
             <p className='font-bold'>
-               October 2015 - August 2019<span className='mx-16'>Stereo Hospital</span>
+               October 2015 - August 2019<span className='mx-16 text-blue-500'>Stereo Hospital</span>
                <span>Tucson, Arizona</span>
             </p>
             <p className='font-bold text-sm ml-6 my-1'>Online Sales/Project Manager</p>
@@ -160,6 +183,7 @@ const Resume: FC = () => {
             <h5 className='font-bold text-xl my-4 mx-12 text-center'>Education</h5>
             <ul className='list-disc list-inside text-sm pl-6'>
                <li>Certificate in full-stack web develoment from Georgia Tech: 2021</li>
+               <li>Certificate in Javascript Algorithms and Data Structures from Freecodecamp: 2021</li>
                <li>
                   Completed two semesters of computer science and Java programming at Pima Community College - Tucson,
                   AZ
