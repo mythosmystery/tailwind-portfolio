@@ -69,7 +69,7 @@ const Resume: FC = () => {
                <span className='font-bold'>Languages:</span> Javascript, Typescript, HTML, CSS, Java, Bash, C#, and SQL
             </p>
             <p className='text-sm mt-0.5'>
-               <span className='font-bold'>Applications:</span> Github, MongoDB, MySQL, PostgreSQL, VS Code, Arch Linux,
+               <span className='font-bold'>Applications:</span> Github, MongoDB, MySQL, PostgreSQL, VS Code, Linux,
                Photoshop
             </p>
             <p className='text-sm mt-0.5 border-b border-gray-300 pb-6'>
@@ -113,26 +113,13 @@ const Resume: FC = () => {
                <li>Role: Sole Developer</li>
                <li>Tools: React, Next.js, GraphQL, PostgreSQL, TypeORM, TailwindCSS, Redis, URQL, AWS</li>
             </ul>
-            <b className='text-sm mt-2'>
-               Friendlie |{' '}
-               <a className='text-blue-800 mt-2' href='https://github.com/mythosmystery/friendlie'>
-                  github.com/mythosmystery/friendlie
-               </a>{' '}
-               |
-            </b>
-            <ul className='list-disc list-inside text-sm pl-6 pb-2'>
-               <li>
-                  Summary: A place for making friends. Built to scale with Typescript, PostgreSQL, TypeORM, TypeGraphQL,
-                  Next.js, Apollo, OAuth, TailwindCSS, JWT
-               </li>
-               <li>Features: Secure social sign-in, Scalable back-end, Responsive PWA UI</li>
-               <li>Role: Sole Developer</li>
-               <li>Tools: Typescript, React, Next.js, PostgreSQL, TypeORM, TypegraphQL, Apollo, TailwindCSS</li>
-            </ul>
 
             <b className='text-sm mt-2'>Fidelity | </b>
             <ul className='list-disc list-inside text-sm pl-6 border-b border-gray-300 pb-6'>
-               <li>Summary: An easy to use interface to manage customer data and repair/sales order data</li>
+               <li>
+                  Summary: An easy to use interface to manage customer data and repair/sales order data built for Hi-fi
+                  Workshop
+               </li>
                <li>
                   Features: Admin interface for technicians with full management of customers and active repairs Coming
                   soon: Interface for customers to track repairs
@@ -148,8 +135,11 @@ const Resume: FC = () => {
             </p>
             <p className='font-bold text-sm ml-6 my-1'>Contract Web Developer</p>
             <ul className='list-disc list-inside text-sm pl-6 mb-8'>
-               <li>Developing a web app for managing repair orders and sales</li>
-               <li>Designed to improve efficiency and collect better customer data and metrics</li>
+               <li>
+                  Developing a web app for managing repair orders and sales using Typescript, Remix.run, React,
+                  PostgreSQL, and Prisma
+               </li>
+               <li>Designed using agile scrum methodologies</li>
                <li>Built to be very extensible with a scalable codebase</li>
             </ul>
 
@@ -160,7 +150,6 @@ const Resume: FC = () => {
             <p className='font-bold text-sm ml-6 my-1'>Electronics Repair Technician</p>
             <ul className='list-disc list-inside text-sm pl-6 mb-8'>
                <li>Developed an online presence and boosted SEO for more customer visibility.</li>
-               <li>Worked with customers to find the best solution for their needs.</li>
                <li>
                   Collaborated in designing the storefront and workshop for efficient repairs and a fantastic customer
                   experience
