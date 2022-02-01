@@ -1,5 +1,6 @@
 import { AnimatePresence, motion } from 'framer-motion';
-import { FC, ReactNode } from 'react';
+import Link from 'next/link';
+import { FC } from 'react';
 
 interface CardProps {
    show: boolean;
@@ -32,28 +33,28 @@ const Light: FC<CardProps> = ({ children, show }) => {
    );
 };
 
-interface FooterProps {
-   children: Array<ReactNode>;
+const Footer: FC = ({ children }) => {
+   return <div className='flex flex-row mt-2'>{children}</div>;
+};
+
+interface FooterItem {
+   href: string;
 }
 
-const Footer: FC<FooterProps> = ({ children }) => {
+const FooterItem: FC<FooterItem> = ({ children, href }) => {
    return (
-      <div className='flex flex-row mt-2'>
-         {children.map((child: ReactNode, i) => {
-            return (
-               <motion.div
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ translateY: 10, scale: 1.1 }}
-                  key={i}
-                  className={
-                     'border-t border-gray-700 w-2/4 text-center hover:text-yellow-600 text-lg py-3 text-indigo-600 hover:bg-gray-700 hover:cursor-pointer hover:shadow-md'
-                  }
-               >
-                  {child}
-               </motion.div>
-            );
-         })}
-      </div>
+      <Link href={href}>
+         <motion.div
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ translateY: 10, scale: 1.1 }}
+            className={
+               'border-t border-gray-700 w-2/4 text-center hover:bg-gray-700 hover:text-yellow-600 text-lg py-3 text-indigo-600 hover:cursor-pointer hover:shadow-md'
+            }
+         >
+            {children}
+         </motion.div>
+      </Link>
    );
 };
-export default Object.assign(Card, { Title, Light, Footer, Body });
+
+export default Object.assign(Card, { Title, Light, Footer, Body, FooterItem });

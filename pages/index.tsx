@@ -7,7 +7,6 @@ import markdown from '../images/markdown.png';
 import weather from '../images/weather.png';
 //components
 import Head from 'next/head';
-import Link from 'next/link';
 import Card from '../components/Card';
 import ImageCard from '../components/ImageCard';
 import ProfileImage from '../components/ProfileImage';
@@ -111,9 +110,11 @@ const Home: FC = () => {
                   </List>
                </Card.Light>
                <Card.Footer>
-                  <Link href='https://github.com/mythosmystery/notes-web-frontend'>Client Source</Link>
-                  <Link href='https://github.com/mythosmystery/notes-backend'>Server Source</Link>
-                  <Link href='https://typenotes.ga'>Deployment</Link>
+                  <Card.FooterItem href='https://github.com/mythosmystery/notes-web-frontend'>
+                     Client Source
+                  </Card.FooterItem>
+                  <Card.FooterItem href='https://github.com/mythosmystery/notes-backend'>Server Source</Card.FooterItem>
+                  <Card.FooterItem href='https://typenotes.ga'>Deployment</Card.FooterItem>
                </Card.Footer>
             </ImageCard>
          </article>
@@ -140,8 +141,10 @@ const Home: FC = () => {
                      </List>
                   </Card.Light>
                   <Card.Footer>
-                     <Link href='https://github.com/mythosmystery/next-gen-weather'>Source Code</Link>
-                     <Link href='https://next-gen-weather.ga'>Deployment</Link>
+                     <Card.FooterItem href='https://github.com/mythosmystery/next-gen-weather'>
+                        Source Code
+                     </Card.FooterItem>
+                     <Card.FooterItem href='https://next-gen-weather.ga'>Deployment</Card.FooterItem>
                   </Card.Footer>
                </ImageCard>
             </article>
@@ -168,8 +171,8 @@ const Home: FC = () => {
                      </List>
                   </Card.Light>
                   <Card.Footer>
-                     <Link href='https://github.com/mythosmystery/bug-tracker'>Source Code</Link>
-                     <Link href='https://hb-bug-tracker.herokuapp.com/'>Deployment</Link>
+                     <Card.FooterItem href='https://github.com/mythosmystery/bug-tracker'>Source Code</Card.FooterItem>
+                     <Card.FooterItem href='https://hb-bug-tracker.herokuapp.com/'>Deployment</Card.FooterItem>
                   </Card.Footer>
                </ImageCard>
             </article>
@@ -197,8 +200,8 @@ const Home: FC = () => {
                      </List>
                   </Card.Light>
                   <Card.Footer>
-                     <Link href='https://github.com/mythosmystery/markdown-it'>Source Code</Link>
-                     <Link href='https://markdownit.ga'>Deployment</Link>
+                     <Card.FooterItem href='https://github.com/mythosmystery/markdown-it'>Source Code</Card.FooterItem>
+                     <Card.FooterItem href='https://markdownit.ga'>Deployment</Card.FooterItem>
                   </Card.Footer>
                </ImageCard>
             </article>
@@ -224,8 +227,8 @@ const Home: FC = () => {
                      </List>
                   </Card.Light>
                   <Card.Footer>
-                     <Link href='https://github.com/mythosmystery/dev-crowd'>Source Code</Link>
-                     <Link href='https://hb-dev-crowd.herokuapp.com/'>Deployment</Link>
+                     <Card.FooterItem href='https://github.com/mythosmystery/dev-crowd'>Source Code</Card.FooterItem>
+                     <Card.FooterItem href='https://hb-dev-crowd.herokuapp.com/'>Deployment</Card.FooterItem>
                   </Card.Footer>
                </ImageCard>
             </article>
