@@ -61,16 +61,16 @@ const Home: FC = () => {
             <ProfileImage image={me} />
             <Card>
                <p>
-                  My name is Hunter Barton and I am a 23 year old software developer, photographer and musician. I have
+                  My name is Hunter Barton and I am a 24 year old software developer, photographer and musician. I have
                   been programming for about 5 years, but I have had an interest since a young age because of my Dad who
-                  is also a programmer. I started with Java and have since learned Javascript, Typescript, and I am
-                  learning C# currently. My passion for programming and computers has always drawn me to the industry. I
-                  have taken programming classes at Pima Community College in Tucson, AZ. I completed the Georgia Tech
-                  full-stack coding bootcamp with straight A's. I was the lead programmer on our final project, which
-                  was a social media app. Prior to attending the GA Tech bootcamp I managed Google ads and a Squarespace
-                  website for my employer. At that job I also troubleshot and repaired electronic equipment, this gave
-                  me a strong background for logically debugging systems. I have also earned a certification for Data
-                  Structures and Algorithms in Javascript.
+                  is also a programmer. I started with Java and have since learned Javascript, Typescript, and Python.
+                  My passion for programming and computers has always drawn me to the industry. I have taken programming
+                  classes at Pima Community College in Tucson, AZ. I completed the Georgia Tech full-stack coding
+                  bootcamp with straight A's. I was the lead programmer on our final project, which was a social media
+                  app. Prior to attending the GA Tech bootcamp I managed Google ads and a Squarespace website for my
+                  employer. At that job I also troubleshot and repaired electronic equipment, this gave me a strong
+                  background for logically debugging systems. I have also earned a certification for Data Structures and
+                  Algorithms in Javascript.
                </p>
             </Card>
          </article>

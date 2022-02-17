@@ -22,7 +22,9 @@ import {
    SiSvelte,
    SiTailwindcss,
    SiTypescript,
-   SiVisualstudiocode
+   SiVisualstudiocode,
+   SiPython,
+   SiCsharp
 } from 'react-icons/si';
 import { IconContainer } from './IconContainer';
 
@@ -32,7 +34,7 @@ export const IconSkills: React.FC<IconSkillsProps> = ({}) => {
    return (
       <section className='text-center'>
          <h1 className='text-2xl font-thin text-gray-400 pb-2 mt-6'>Languages</h1>
-         <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-y-8 grid-flow-row w-full text-gray-600 py-6 px-4 my-6'>
+         <div className='grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-y-8 grid-flow-row w-full text-gray-600 py-6 px-4 my-6'>
             <IconContainer title='Typescript'>
                <SiTypescript size='64' className='text-blue-400' />
             </IconContainer>
@@ -50,6 +52,12 @@ export const IconSkills: React.FC<IconSkillsProps> = ({}) => {
             </IconContainer>
             <IconContainer title='CSS 3'>
                <SiCss3 size='64' className='text-blue-800' />
+            </IconContainer>
+            <IconContainer title='Python'>
+               <SiPython size='64' className='text-green-800' />
+            </IconContainer>
+            <IconContainer title='C#'>
+               <SiCsharp size='64' className='text-yellow-300' />
             </IconContainer>
          </div>
 
